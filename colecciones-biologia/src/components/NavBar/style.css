@@ -1,0 +1,18 @@
+.NavBarItems {
+  background-color: #078b45;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  font-size: 1.2rem;
+}
+
+.navbar-logo {
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.navbar-logo img {
+  width: 10rem;
+  height: 4rem;
+}
