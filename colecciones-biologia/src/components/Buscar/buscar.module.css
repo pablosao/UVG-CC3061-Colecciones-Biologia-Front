@@ -1,0 +1,8 @@
+.buscar {
+  /*margin-top: 1rem;*/
+  display: flex;
+  height: 40%;
+  width: 100%;
+  background-color: #444444;
+  justify-content: center;
+}
