@@ -15,7 +15,7 @@ const NavBar = ({ clicked, onClick }) => {
   return (
     <nav className="NavBarItems">
       <div className="navbar-logo">
-        <img src={logo} alt=""></img>
+        <img src={logo} alt="" />
       </div>
       <div className="menu-icon" onClick={onClick}>
         <FontAwesomeIcon icon={clicked ? faTimes : faBars} />
