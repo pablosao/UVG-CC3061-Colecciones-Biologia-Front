@@ -1,0 +1,40 @@
+.search-form {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.search-input {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 1rem;
+  background: white;
+  border-radius: 0.5rem;
+  height: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.search-form input {
+  width: 100%;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+}
+
+.search-suggestions {
+  width: 100%;
+  color: black;
+}
+
+.search-suggestions ul {
+  background: white;
+  list-style-type: none;
+  text-align: left;
+  position: absolute;
+  border-radius: 0.5rem;
+}
+
+.search-form li {
+  padding: 0.75rem 0.75rem;
+  font-size: 1rem;
+}
