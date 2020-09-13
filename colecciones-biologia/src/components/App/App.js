@@ -1,11 +1,13 @@
 import React from "react";
 import { Provider } from "react-redux";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 //import "bootstrap/dist/css/bootstrap.min.css";
 
 import { configureStore } from "../../store";
 import NavBar from "../NavBar/navBar";
 import Footer from "../Footer/footer";
 import Search from "../Search/search";
+import Login from "../Login/login";
 import "./App.css";
 
 const store = configureStore();
@@ -13,11 +15,12 @@ const store = configureStore();
 const App = () => {
   return (
     <Provider store={store}>
-      <div className="App">
-        <NavBar />
-        <Search />
-        <Footer />
-      </div>
+      <Router>
+        <Route path="/" component={NavBar} />
+        <Route path="/" exact component={Search} />
+        <Route path="/sign-in" exact component={Login} />
+        <Route path="/" component={Footer} />
+      </Router>
     </Provider>
   );
 };
