@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 import * as selectors from "../../reducers";
 import * as actions from "../../actions/navbar";
@@ -31,7 +32,9 @@ const NavBar = ({ clicked, onClick }) => {
           );
         })}
       </ul>
-      <Button>Sign Up</Button>
+      <Link to="/sign-in">
+        <Button>Log in</Button>
+      </Link>
     </nav>
   );
 };
