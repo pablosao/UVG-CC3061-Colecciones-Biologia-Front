@@ -1,5 +1,11 @@
 {
   "name": "colecciones-biologia",
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "\\.js$": "<rootDir>/node_modules/babel-jest"
+    }
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +15,9 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-react": "^6.24.1",
     "bootstrap": "^4.5.2",
     "react": "^16.13.1",
     "react-bootstrap": "^1.3.0",
@@ -22,8 +31,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test": "jest"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -41,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "babel-jest": "^26.3.0",
     "jest": "^26.4.2"
   }
 }
