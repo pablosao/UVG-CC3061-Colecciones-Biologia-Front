@@ -1,0 +1,50 @@
+.search-container {
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 90.5vh;
+  width: 100%;
+}
+
+.search-title {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 75%;
+}
+
+.search-img {
+  background-image: 
+      /* your image */ url("https://www.picsporadic.com/wp-content/uploads/2019/03/guatemala-atitlan-150315-016-hdr-gx1_web.jpg");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.search-img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.search-container .search-field {
+  margin: 2rem;
+  width: 60%;
+}
+
+@media (min-width: 960px) {
+  .search-img {
+    background-image: 
+      /* your image */ url("https://www.picsporadic.com/wp-content/uploads/2019/03/guatemala-atitlan-150315-016-hdr-gx1_web.jpg");
+    background-size: cover;
+  }
+}
+
+@media (max-width: 992px) {
+  .search-img {
+    background-size: cover;
+  }
+}

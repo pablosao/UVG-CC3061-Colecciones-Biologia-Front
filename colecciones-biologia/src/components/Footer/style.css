@@ -1,0 +1,28 @@
+.main-footer {
+  background: #3b3a3c;
+  color: white;
+  padding: 1rem;
+  height: 16rem;
+  width: 100%;
+}
+
+.img-footer {
+  height: 5rem;
+  width: 5rem;
+  margin: 2rem;
+}
+
+.img-footer img {
+  height: 100%;
+  width: 100%;
+}
+
+.footer-info {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-info ul {
+  text-decoration: none;
+  list-style: none;
+}
