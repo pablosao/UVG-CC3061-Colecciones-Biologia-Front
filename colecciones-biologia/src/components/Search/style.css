@@ -8,6 +8,15 @@
   width: 100%;
 }
 
+.search-container2 {
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row !important;
+  width: 100%;
+}
+
 .search-title {
   align-items: center;
   justify-content: center;
@@ -30,9 +39,20 @@
   position: absolute;
 }
 
+
 .search-container .search-field {
   margin: 2rem;
-  width: 60%;
+  width: 45%;
+}
+
+.search-button{
+  width: min-content;
+  height: 3rem;
+  background-color: rgb(99, 95, 95);
+  color: rgb(255, 255, 255);
+  border-radius: 50px;
+  font-size: medium;
+  padding: 1rem;
 }
 
 @media (min-width: 960px) {
