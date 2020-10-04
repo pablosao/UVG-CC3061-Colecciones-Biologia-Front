@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+id="fc981cf3-63fc-4b02-ac56-d058622006d3"
+mode="Desktop">
+  <codegen classname="Recording1" namespace="Colecciones_Biologia"/>
+  <name>
+      Recording1
+  </name>
+  <recorditems/>
+  <repository name="Colecciones BiologiaRepository" relativepath="Colecciones BiologiaRepository.rxrep">
+  </repository>
+</recordtable>

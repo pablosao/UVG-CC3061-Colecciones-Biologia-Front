@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+id="ce35a476-fbf5-41d2-bff0-4e95bd93feb1"
+mode="Desktop">
+  <codegen classname="OpenBrowser" namespace="Colecciones_Biologia"/>
+  <name>
+    OpenBrowser
+  </name>
+  <recorditems>
+    <openwebsiterecorditem
+        args=""
+        browser="IE"
+        clearcache="False"
+        clearcookies="False"
+        enabled="True"
+        incognito="False"
+        instrument="True"
+        killexisting="False"
+        maximized="False"
+        optional="False">
+      <comment>
+      </comment>
+      <bindings>
+      </bindings>
+      <url>
+        http://localhost:3000/
+      </url>
+    </openwebsiterecorditem>
+  </recorditems>
+  <repository name="Colecciones BiologiaRepository" relativepath="Colecciones BiologiaRepository.rxrep">
+  </repository>
+</recordtable>
