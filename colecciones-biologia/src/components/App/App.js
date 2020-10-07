@@ -1,16 +1,19 @@
 import React from "react";
 import { Provider } from "react-redux";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-//import "bootstrap/dist/css/bootstrap.min.css";
+//import 'bootstrap';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import { configureStore } from "../../store";
 import NavBar from "../NavBar/navBar";
 import Footer from "../Footer/footer";
 import Search from "../Search/search";
 import Login from "../Login/login";
+import About from "../AcercaDe";
+import NewEspecie from '../Especie/especimen';
 import "./App.css";
 import styles from './App.css';
-import Buscar from '../Buscar';
+
 
 const store = configureStore();
 
@@ -19,6 +22,8 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <Route path="/" component={NavBar} />
+        {/*<Route path="/about-us" component={About} />*/}
+        <Route path="/about-us" component={NewEspecie} />
         <Route path="/" exact component={Search} />
         <Route path="/sign-in" exact component={Login} />
         <Route path="/" component={Footer} />
