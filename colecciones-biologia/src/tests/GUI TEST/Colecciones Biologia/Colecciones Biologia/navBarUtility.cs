@@ -79,6 +79,30 @@ namespace Colecciones_Biologia
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG.Home' at 42;8.", repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG.HomeInfo, new RecordItemIndex(0));
+            repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG.Home.Click("42;8");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='http://localhost:3000/about-us') on item 'ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG.SobreNosotros'.", repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG.SobreNosotrosInfo, new RecordItemIndex(1));
+            Validate.AttributeEqual(repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG.SobreNosotrosInfo, "Text", "http://localhost:3000/about-us");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG.SobreNosotros' at 77;20.", repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG.SobreNosotrosInfo, new RecordItemIndex(2));
+            repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG.SobreNosotros.Click("77;20");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None1' at 1386;45.", repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None1Info, new RecordItemIndex(3));
+            repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None1.Click("1386;45");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Visible='True') on item 'ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None1'.", repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None1Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None1Info, "Visible", "True");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleState='None') on item 'ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None1'.", repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None1Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None1Info, "AccessibleState", "None");
+            Delay.Milliseconds(100);
+            
         }
 
 #region Image Feature Data

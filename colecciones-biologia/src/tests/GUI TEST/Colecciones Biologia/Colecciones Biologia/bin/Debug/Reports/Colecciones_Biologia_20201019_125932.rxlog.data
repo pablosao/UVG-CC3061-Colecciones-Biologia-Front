@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="1.1m"
+		durationms="65029"
+		type="root"
+		rid="75d5a1794c2a1dc"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="1"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="1"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="1"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="andre"
+		rxversion="9.3.2.0"
+		host="DESKTOP-UBFJELJ"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1920x1080"
+		timestamp="10/19/2020 12:59:32 PM"
+		timestampiso="2020-10-19T18:59:32"
+		endtime="10/19/2020 1:00:37 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion="">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<activity
+			result="Failed"
+			duration="4.54s"
+			durationms="4541"
+			type="test-suite"
+			rid="7d3766fc700ceb2"
+			totalerrorcount="1"
+			totalwarningcount="0"
+			totalsuccesstestcasecount="0"
+			totalfailedtestcasecount="1"
+			totalblockedtestcasecount="0"
+			childsuccesscount="0"
+			childfailedcount="1"
+			childblockedcount="0"
+			totalsuccesscount="0"
+			totalfailedcount="1"
+			totalblockedcount="0"
+			totalmaintenancemodecount="0"
+			testsuitename="Colecciones_Biologia"
+			headertext="Colecciones_Biologia"
+			runconfigname="TestRun"
+			runlabel="">
+			<params>
+			</params>
+			<activity
+				result="Failed"
+				duration="4.5s"
+				durationms="4499"
+				type="test-case"
+				rid="25eb5be09c12538"
+				totalerrorcount="1"
+				totalwarningcount="0"
+				totalsuccesstestcasecount="0"
+				totalfailedtestcasecount="1"
+				totalblockedtestcasecount="0"
+				childsuccesscount="0"
+				childfailedcount="1"
+				childblockedcount="0"
+				totalsuccesscount="0"
+				totalfailedcount="1"
+				totalblockedcount="0"
+				totalmaintenancemodecount="0"
+				testcontainername="Formulario"
+				testcontainerid="94db8223-5f7b-4126-bb80-3c1718f66f0e"
+				headertext="Formulario"
+				displayName="Formulario"
+				iteration="1"
+				activity-exectype="execute"
+				conditionstate="none">
+				<activity
+					result="Failed"
+					duration="4.47s"
+					durationms="4469"
+					type="test-module"
+					rid="1a1bfc21379d0554"
+					totalerrorcount="1"
+					totalwarningcount="0"
+					totalsuccesstestcasecount="0"
+					totalfailedtestcasecount="0"
+					totalblockedtestcasecount="0"
+					childsuccesscount="0"
+					childfailedcount="0"
+					childblockedcount="0"
+					totalsuccesscount="0"
+					totalfailedcount="0"
+					totalblockedcount="0"
+					totalmaintenancemodecount="0"
+					modulename="Recording3"
+					displayName="Recording3"
+					moduleid="81548de5-ea98-4d68-a7d0-53537b457fb8"
+					moduletype="Recording"
+					iteration="1"
+					activity-exectype="execute"
+					testentry-activity-type="testmodule">
+					<errormessage>
+						Failed to move to location '93;19' within element '{Text:Sobre Nosotros}'.
+					</errormessage>
+					<varbindings>
+					</varbindings>
+					<item
+						timeRelativeToTestSuiteStartTime="00:00.078"
+						timeRelativeToTestModuleStartTime="00:00.017"
+						timeWallClock="13:00:33"
+						time="00:00.078"
+						level="Info"
+						category="Validation">
+						<message>
+							Validating AttributeEqual (Visible='True') on item 'ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None1'.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/form[@title>'Coleccion Biologia UVG - Mozilla']/container[@accessiblerole='Grouping']//container[@accessiblename='Coleccion Biologia UVG']/?/?/element[@accessiblerole='None']"
+							itempath="?/?/element[@accessiblerole='None']"
+							fullname="Colecciones_BiologiaRepository.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None1"
+							id="22f9dc48fce54ef38433f6f9fe7e5ab1"
+							timeout="90000"
+							codefile="C:\Users\andre\OneDrive\Ingenieria de SOFTWARE\Front\UVG-CC3061-Colecciones-Biologia-Front\colecciones-biologia\src\tests\GUI TEST\Colecciones Biologia\Colecciones Biologia\Recording3.cs"
+							codeline="82"
+							itemindex="0"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:03.813"
+						timeRelativeToTestModuleStartTime="00:03.752"
+						timeWallClock="13:00:37"
+						time="00:03.813"
+						level="Success"
+						category="Validation"
+						errimg="images_Coleccio_ced1dae2\Coleccio_ced1dae2_8d66a7b3_trace.jpg"
+						errthumb="images_Coleccio_ced1dae2\Coleccio_ced1dae2_8d66a7b3_trace_thumb.jpg">
+						<message>
+							Attribute 'Visible' of element for item 'Colecciones_BiologiaRepository.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None1' does match the specified value.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/form[@title>'Coleccion Biologia UVG - Mozilla']/container[@accessiblerole='Grouping']//container[@accessiblename='Coleccion Biologia UVG']/?/?/element[@accessiblerole='None']"
+							itempath="?/?/element[@accessiblerole='None']"
+							fullname="Colecciones_BiologiaRepository.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None1"
+							id="22f9dc48fce54ef38433f6f9fe7e5ab1"
+							timeout="90000"
+							codefile="C:\Users\andre\OneDrive\Ingenieria de SOFTWARE\Front\UVG-CC3061-Colecciones-Biologia-Front\colecciones-biologia\src\tests\GUI TEST\Colecciones Biologia\Colecciones Biologia\Recording3.cs"
+							codeline="83"
+							loglvl="Success"
+							itemindex="0">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:03.972"
+						timeRelativeToTestModuleStartTime="00:03.911"
+						timeWallClock="13:00:37"
+						time="00:03.972"
+						level="Info"
+						category="Mouse"
+						errimg="images_Coleccio_ced1dae2\Coleccio_ced1dae2_3f27fcb3_trace.jpg"
+						errthumb="images_Coleccio_ced1dae2\Coleccio_ced1dae2_3f27fcb3_trace_thumb.jpg">
+						<message>
+							Mouse Left Click item 'ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG.SobreNosotros' at 93;19.
+						</message>
+						<metainfo
+							type="repoitem"
+							path="/form[@title>'Coleccion Biologia UVG - Mozilla']//container[@accessiblename='Coleccion Biologia UVG']/?/?/element/list[@accessiblerole='List']/listitem[@accessiblename='Sobre Nosotros']/link[@accessiblename='Sobre Nosotros']/text[@accessiblename='Sobre Nosotros']"
+							itempath="?/?/element/list[@accessiblerole='List']/listitem[@accessiblename='Sobre Nosotros']/link[@accessiblename='Sobre Nosotros']/text[@accessiblename='Sobre Nosotros']"
+							fullname="Colecciones_BiologiaRepository.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG.SobreNosotros"
+							id="788777163a66402c8d2332d7e9a5649a"
+							timeout="90000"
+							codefile="C:\Users\andre\OneDrive\Ingenieria de SOFTWARE\Front\UVG-CC3061-Colecciones-Biologia-Front\colecciones-biologia\src\tests\GUI TEST\Colecciones Biologia\Colecciones Biologia\Recording3.cs"
+							codeline="86"
+							itemindex="1"
+							loglvl="Info">
+						</metainfo>
+					</item>
+					<item
+						timeRelativeToTestSuiteStartTime="00:04.326"
+						timeRelativeToTestModuleStartTime="00:04.265"
+						timeWallClock="13:00:37"
+						time="00:04.326"
+						level="Error"
+						category="Module"
+						errimg="images_Coleccio_ced1dae2\Coleccio_ced1dae2_36ee8279_trace.jpg"
+						errthumb="images_Coleccio_ced1dae2\Coleccio_ced1dae2_36ee8279_trace_thumb.jpg">
+						<message>
+							Failed to move to location '93;19' within element '{Text:Sobre Nosotros}'.<br/>The pointer cannot be moved to point '{X=1545,Y=-139}' since it is outside of the visible desktop.
+						</message>
+						<metainfo
+							stacktrace="   at Ranorex.Mouse.MoveTo(Element element, Location location, Duration moveTime)
+   at Ranorex.Mouse.Click(Element element, MouseButtons buttons, Location location, Int32 times, Duration moveTime)
+   at Ranorex.Adapter.Click(MouseButtons buttons, Location location, Int32 times, Duration moveTime, Boolean showOutOfBoundsWarning)
+   at Ranorex.Adapter.Click(Location location)
+   at Colecciones_Biologia.Recording3.Ranorex.Core.Testing.ITestModule.Run() in C:\Users\andre\OneDrive\Ingenieria de SOFTWARE\Front\UVG-CC3061-Colecciones-Biologia-Front\colecciones-biologia\src\tests\GUI TEST\Colecciones Biologia\Colecciones Biologia\Recording3.cs:line 87
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+							codefile="C:\Users\andre\OneDrive\Ingenieria de SOFTWARE\Front\UVG-CC3061-Colecciones-Biologia-Front\colecciones-biologia\src\tests\GUI TEST\Colecciones Biologia\Colecciones Biologia\Recording3.cs"
+							codeline="87"
+							type="repoitem"
+							path="/form[@title>'Coleccion Biologia UVG - Mozilla']//container[@accessiblename='Coleccion Biologia UVG']/?/?/element/list[@accessiblerole='List']/listitem[@accessiblename='Sobre Nosotros']/link[@accessiblename='Sobre Nosotros']/text[@accessiblename='Sobre Nosotros']"
+							itempath="?/?/element/list[@accessiblerole='List']/listitem[@accessiblename='Sobre Nosotros']/link[@accessiblename='Sobre Nosotros']/text[@accessiblename='Sobre Nosotros']"
+							fullname="Colecciones_BiologiaRepository.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG.SobreNosotros"
+							id="788777163a66402c8d2332d7e9a5649a"
+							timeout="90000"
+							loglvl="Error"
+							itemindex="1">
+						</metainfo>
+					</item>
+				</activity>
+			</activity>
+		</activity>
+	</activity>
+</report>

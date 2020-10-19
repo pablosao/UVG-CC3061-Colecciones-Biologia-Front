@@ -79,6 +79,42 @@ namespace Colecciones_Biologia
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Firefox.ColeccionBiologiaUVGMozillaFirefox' at 30;100.", repo.Firefox.ColeccionBiologiaUVGMozillaFirefoxInfo, new RecordItemIndex(0));
+            repo.Firefox.ColeccionBiologiaUVGMozillaFirefox.Click("30;100");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG2' at 148;8.", repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG2Info, new RecordItemIndex(1));
+            repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG2.Click("148;8");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.Buscar' at 385;17.", repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.BuscarInfo, new RecordItemIndex(2));
+            repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.Buscar.Click("385;17");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'ahsnf' with focus on 'ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.Buscar'.", repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.BuscarInfo, new RecordItemIndex(3));
+            repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.Buscar.PressKeys("ahsnf");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None1'.", repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None1Info, new RecordItemIndex(4));
+            Validate.AttributeEqual(repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None1Info, "Enabled", "True");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleState='None') on item 'ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None1'.", repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None1Info, new RecordItemIndex(5));
+            Validate.AttributeEqual(repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None1Info, "AccessibleState", "None");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None' at 638;535.", repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.NoneInfo, new RecordItemIndex(6));
+            repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None.Click("638;535");
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Enabled='True') on item 'ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None'.", repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.NoneInfo, new RecordItemIndex(7));
+            Validate.AttributeEqual(repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.NoneInfo, "Enabled", "True");
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (AccessibleState='None') on item 'ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.None'.", repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.NoneInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.ColeccionBiologiaUVGMozillaFirefox.ColeccionBiologiaUVG1.NoneInfo, "AccessibleState", "None");
+            Delay.Milliseconds(100);
+            
         }
 
 #region Image Feature Data

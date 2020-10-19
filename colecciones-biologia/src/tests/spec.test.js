@@ -1,5 +1,4 @@
 import reducer from '../reducers/navbar'
-import actions from '../actions/navbar'
 import * as types from '../actions/navbar'
 
 

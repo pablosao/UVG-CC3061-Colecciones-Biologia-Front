@@ -1,32 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
+embeddedrepository="False"
 id="ce35a476-fbf5-41d2-bff0-4e95bd93feb1"
 mode="Desktop">
-  <codegen classname="OpenBrowser" namespace="Colecciones_Biologia"/>
-  <name>
-    OpenBrowser
-  </name>
-  <recorditems>
-    <openwebsiterecorditem
-        args=""
-        browser="IE"
-        clearcache="False"
-        clearcookies="False"
-        enabled="True"
-        incognito="False"
-        instrument="True"
-        killexisting="False"
-        maximized="False"
-        optional="False">
-      <comment>
-      </comment>
-      <bindings>
-      </bindings>
-      <url>
-        http://localhost:3000/
-      </url>
-    </openwebsiterecorditem>
-  </recorditems>
-  <repository name="Colecciones BiologiaRepository" relativepath="Colecciones BiologiaRepository.rxrep">
-  </repository>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenBrowser"
+	namespace="Colecciones_Biologia">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<openwebsiterecorditem
+		args=""
+		browser="IE"
+		clearcache="False"
+		clearcookies="False"
+		enabled="True"
+		incognito="False"
+		instrument="True"
+		killexisting="False"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<url>
+				http://localhost:3000/
+			</url>
+		</openwebsiterecorditem>
+	</recorditems>
+	<repository
+	id="39026bcd-d96c-4ea7-8e7b-0bf13e28df15"
+	name="Colecciones_BiologiaRepository"
+	relativepath="Colecciones_BiologiaRepository.rxrep">
+		<codegen
+		classname="Colecciones_BiologiaRepository"
+		namespace="Colecciones_Biologia">
+		</codegen>
+		<rootfolder
+		id="ab6f0686-5f78-49af-81c1-274fbf04a566"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
 </recordtable>

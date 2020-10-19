@@ -1,5 +1,4 @@
 import reducer from '../reducers/search'
-import actions from '../actions/search'
 import * as types from '../actions/search'
 
 

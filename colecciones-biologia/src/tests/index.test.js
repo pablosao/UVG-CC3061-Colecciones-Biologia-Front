@@ -1,5 +1,6 @@
+//Elaboradas por Andrea Elias 
+
 import reducer from '../reducers/index'
-import navBar from '../reducers/navbar'
 
 describe('index reducers', () => {
     it('should return click state', () => {
