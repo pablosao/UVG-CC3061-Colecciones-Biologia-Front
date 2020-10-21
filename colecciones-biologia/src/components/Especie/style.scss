@@ -26,6 +26,38 @@ h1 {
 	line-height: 2.2rem;
 }
 
+textarea{
+	border: 1px solid #fff;
+	font-size: 1.2rem;
+	padding: .6rem;
+	padding-left: 0;
+	background:transparent;
+	border: none;
+	border: 2px solid #444;
+	transition: $page-animDuration;
+	width: calc(100% - .6rem);
+	width: 350px;
+	height: 250px;
+	border-radius: 0;
+	
+	&:focus {
+		outline: none;
+	}
+	
+}
+
+h6{
+	label {
+		position: absolute;
+		top: .8rem;	
+		left: 0;
+		display: block;
+		font-size: 1rem;
+		transition: $page-animDuration ease-out;	
+		opacity: .5;
+		
+	}
+}
 /*/ =============================
 // Form styles
 // =============================*/
@@ -69,6 +101,18 @@ form {
 	position: relative;
 }
 
+.field-title {
+	position: absolute;
+	top: .8rem;	
+	left: 0;
+	display: block;
+	font-size: 1rem;
+	transition: $page-animDuration ease-out;	
+	opacity: .5;
+	will-change: top, font-size;
+	
+}
+
 label {
 	position: absolute;
 	top: .8rem;	
@@ -94,7 +138,7 @@ input {
 	border-bottom: 2px solid #444;
 	transition: $page-animDuration;
 	width: calc(100% - .6rem);
-	max-width: 350px;
+	width: 350px;
 	border-radius: 0;
 	
 	&:focus {
@@ -124,7 +168,7 @@ input {
 	line-height: 1.2rem;
 	border-radius: 5px;
 	border: 2px solid transparent;
-	min-width: 45px !important;
+	width: 185px !important;
 
 	&:hover,
 	&.hover {
@@ -276,7 +320,7 @@ progress {
 	position: relative;
 	width: 100%;
 	transition: .3s;
-	will-change: padding;
+	/*will-change: padding;*/
 	overflow: hidden;
 	color: black;
 }
