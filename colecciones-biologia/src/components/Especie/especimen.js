@@ -28,7 +28,7 @@ const step1Content = <div>
                 
                 <div class="buttons">
                   <div class="dropdown">
-                    <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn-form btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Departamento
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -41,7 +41,7 @@ const step1Content = <div>
                   <div class="buttons">
 
                   <div class="dropdown">
-                    <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn-form btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Municipio
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -99,7 +99,7 @@ const step2Content = <div>
             <form action="" name="form-step-1">
               <div class="buttons">
                 <div class="dropdown">
-                  <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button class="btn-form btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Reino
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -112,7 +112,7 @@ const step2Content = <div>
                 <div class="buttons">
 
                 <div class="dropdown">
-                  <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button class="btn-form btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Filo
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -125,7 +125,7 @@ const step2Content = <div>
 
               <div class="buttons">
                 <div class="dropdown">
-                  <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button class="btn-form btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Clase
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -138,7 +138,7 @@ const step2Content = <div>
 
               <div class="buttons">
                 <div class="dropdown">
-                  <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button class="btn-form btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Orden
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -151,7 +151,7 @@ const step2Content = <div>
 
               <div class="buttons">
                 <div class="dropdown">
-                  <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button class="btn-form btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Familia
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -192,7 +192,7 @@ const step4Content = <div>
             <form action="" name="form-step-1">
             <div class="buttons">
                 <div class="dropdown">
-                  <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button class="btn-form btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Habitat
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -210,7 +210,7 @@ const step4Content = <div>
 
               <div class="buttons">
                 <div class="dropdown">
-                  <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button class="btn-form btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Etapa de vida
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -223,7 +223,7 @@ const step4Content = <div>
 
               <div class="buttons">
                 <div class="dropdown">
-                  <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button class="btn-form btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Sexo
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -236,7 +236,7 @@ const step4Content = <div>
 
               <div class="buttons">
                 <div class="dropdown">
-                  <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button class="btn-form btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Preparacion
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -249,7 +249,7 @@ const step4Content = <div>
 
               <div class="buttons">
                 <div class="dropdown">
-                  <button class="btn btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <button class="btn-form btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Base de Registro
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -276,7 +276,7 @@ const NewEspecie = () => {
       <section class="section">
       <h1>Formulario de Ingreso Nuevo Especimen</h1>
       <StepProgressBar
-        startingStep={3}
+        startingStep={0}
         onSubmit={onFormSubmit}
         steps={[
           {

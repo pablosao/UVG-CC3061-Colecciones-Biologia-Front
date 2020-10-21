@@ -160,7 +160,7 @@ input {
 // Buttons
 // =============================*/
 
-.btn {
+.btn-form {
 	color: #fff;
 	background-color: $green;
 	padding: .8rem;
@@ -168,7 +168,8 @@ input {
 	line-height: 1.2rem;
 	border-radius: 5px;
 	border: 2px solid transparent;
-	width: 185px !important;
+	width: 195px !important;
+	margin: 1.5rem;
 
 	&:hover,
 	&.hover {
