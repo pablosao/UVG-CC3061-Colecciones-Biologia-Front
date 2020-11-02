@@ -6,6 +6,7 @@
   flex-direction: column;
   height: 90.5vh;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .about-container2 {
@@ -103,4 +104,21 @@
   border-radius: 50%;
 }
 
+
+
+.about .left{
+  padding:2% 0;
+  float:left;
+  width:50%;
+  display: inline-block;
+  
+  
+}
+
+.about .right{
+  width:50%;
+  height: 50%;
+  display:inline-block;
+  
+}
 
