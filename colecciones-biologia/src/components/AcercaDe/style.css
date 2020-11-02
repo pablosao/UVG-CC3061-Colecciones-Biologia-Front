@@ -82,3 +82,25 @@
     background-size: cover;
   }
 }
+
+
+
+.carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+  margin-left: 6px;
+  border-radius: 50%;
+}
+
+

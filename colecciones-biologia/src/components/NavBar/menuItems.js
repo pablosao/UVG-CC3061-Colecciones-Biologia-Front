@@ -5,7 +5,12 @@ const MenuItems = [
     cName: "nav-links",
   },
   {
-    title: "Sobre Nosotros",
+    title: "  Formulario",
+    url: "/formulario",
+    cName: "nav-links",
+  },
+  {
+    title: "Acerca de Nosotros",
     url: "/about-us",
     cName: "nav-links",
   },
@@ -14,6 +19,9 @@ const MenuItems = [
     url: "/sign-in",
     cName: "nav-links-mobile",
   },
+
+
+  
 ];
 
 export { MenuItems };

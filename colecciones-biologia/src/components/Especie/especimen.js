@@ -73,8 +73,8 @@ const step1Content = <div>
                 </div>
 
                 <div class="fieldgroup">
-                  <input type="number" name="insertidumbre" id="insertidumbre" />
-                  <label for="insertidumbre">Insertidumbre</label>
+                  <input type="number" name="incertidumbre" id="incertidumbre" />
+                  <label for="incertidumbre">Incertidumbre</label>
                 </div>
 
 

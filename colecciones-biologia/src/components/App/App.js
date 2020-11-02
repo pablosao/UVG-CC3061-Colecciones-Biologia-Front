@@ -22,8 +22,8 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <Route path="/" component={NavBar} />
-        {/*<Route path="/about-us" component={About} />*/}
-        <Route path="/about-us" component={NewEspecie} />
+        <Route path="/about-us" component={About} />
+        <Route path="/formulario" component={NewEspecie} />
         <Route path="/" exact component={Search} />
         <Route path="/sign-in" exact component={Login} />
         <Route path="/" component={Footer} />
