@@ -123,33 +123,7 @@ const style3 = {
   <div class='col col-md-2'>
   </div>
 </div>
-      
- 
-
-      {/*<div class="container row">
-      
-        <div class="about ">
-
-          <div class="left col col-md-6">
-            <br></br>
-            <h1>About us</h1>
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      
-        </div>
-          <div class="right col col-md-6">
-            <img src="https://www.picsporadic.com/wp-content/uploads/2019/03/guatemala-atitlan-150315-016-hdr-gx1_web.jpg"/>
-            </div>
-          <div class="clear"></div>
-        </div>
-
-        
-
-    
-    </div>*/}
-    </div>
+</div>
     
    
   );

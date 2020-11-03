@@ -11,6 +11,7 @@ import Search from "../Search/search";
 import Login from "../Login/login";
 import About from "../AcercaDe/about";
 import NewEspecie from '../Especie/especimen';
+import Admin from '../Admin/admin'
 import "./App.css";
 import styles from './App.css';
 
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/" exact component={Search} />
         <Route path="/sign-in" exact component={Login} />
         <Route path="/" component={Footer} />
+        <Route path="/admin" component={Admin} />
       </Router>
     </Provider>
   );
