@@ -8,27 +8,27 @@ import {Styles} from "./style.css";
 const About = () => {
   const style1 = {
       width: "100%",
-      height: "400px",
+      height: "85vh",
       backgroundImage: "url(https://www.picsporadic.com/wp-content/uploads/2019/03/guatemala-atitlan-150315-016-hdr-gx1_web.jpg )"
   }
 
   const style2 = {
     width: "100%",
-    height: "400px",
+    height: "85vh",
     backgroundImage: "url(https://blog.laminasyaceros.com/hubfs/arton15225.jpg)"
 }
 
 const style3 = {
   width: "100%",
-  height: "400px",
+  height: "85vh",
   backgroundImage: "url(https://www.elagoradiario.com/wp-content/uploads/2019/11/Ping%C3%BCino-emperador-1140x600.jpg )"
 }
 
 
 
   return (
-    <div>
-       <header>
+    <div class='about-page'>
+       
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -60,15 +60,77 @@ const style3 = {
           <span class="sr-only">Next</span>
         </a>
   </div>
-</header>
+<div class='row'>
+  <div class='col col-md-1 col-sm-1'>
+  </div>
+  <div class='col col-md-4 col-sm-11'>
+    <div class='texto-left'>
+      <h2>Colecciones Biologia</h2>
+      <hr></hr>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. </p>
+      <br></br>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</p>
+    </div>
+  </div>
+  <div class=' d-none col-xs-3 col-sm-3'>
+  </div>
+  <div class='col col-md-6 col-sm-11'>
+  <div class='texto-right'>
+      <iframe width="600" height="315" src="https://www.youtube.com/embed/Sp3YlWqjyqY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+      <hr></hr>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. </p>
+      <br></br>
+  <br></br>
+    </div>
+  </div>
+ 
+  
+</div>
+
+
+<div class='row'>
+  <br></br>
+  <div class='col col-md-1'/>
+  <div class='col col-md-10'>
+    <h1>Contacto</h1>
+      <hr></hr>
+  </div>
+  <div class='col col-md-1'/>
+  
+  <div class='col col-md-2'>
+  </div>
+  <div class='col col-md-4'>
+    <div class='texto-left'>
+      <h2>Gabriela Alfaro</h2>
+      <hr></hr>
+      <h5>Tel:</h5>
+      <h5>Email:</h5>
+      <h5>Oficina:</h5>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+      </div>
+  </div>
+  <div class='col col-md-4 '>
+  <div class='texto-right'>
+    <h2>Zabdy Moises</h2>
+    <hr></hr>
+      <h5>Tel:</h5>
+      <h5>Email:</h5>
+      <h5>Oficina:</h5>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+      
+    </div>
+  </div>
+  <div class='col col-md-2'>
+  </div>
+</div>
       
  
 
-      <div class="container">
+      {/*<div class="container row">
       
-        <div class="about">
+        <div class="about ">
 
-          <div class="left">
+          <div class="left col col-md-6">
             <br></br>
             <h1>About us</h1>
             
@@ -77,7 +139,7 @@ const style3 = {
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                       
         </div>
-          <div class="right">
+          <div class="right col col-md-6">
             <img src="https://www.picsporadic.com/wp-content/uploads/2019/03/guatemala-atitlan-150315-016-hdr-gx1_web.jpg"/>
             </div>
           <div class="clear"></div>
@@ -86,7 +148,7 @@ const style3 = {
         
 
     
-      </div>
+    </div>*/}
     </div>
     
    

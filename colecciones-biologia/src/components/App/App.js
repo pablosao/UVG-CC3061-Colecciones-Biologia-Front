@@ -9,7 +9,7 @@ import NavBar from "../NavBar/navBar";
 import Footer from "../Footer/footer";
 import Search from "../Search/search";
 import Login from "../Login/login";
-import About from "../AcercaDe";
+import About from "../AcercaDe/about";
 import NewEspecie from '../Especie/especimen';
 import "./App.css";
 import styles from './App.css';
