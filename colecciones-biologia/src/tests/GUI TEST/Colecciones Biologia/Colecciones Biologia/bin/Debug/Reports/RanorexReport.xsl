@@ -54,10 +54,6 @@
                   </xsl:otherwise>
                 </xsl:choose>
                 <xsl:value-of select ="./activity/@runlabel" />
-                <xsl:if test="../activity/@sutversion">
-                    <br/>
-                    <xsl:value-of select ="../activity/@sutversion" />
-                </xsl:if>
               </p>
 
               <br />

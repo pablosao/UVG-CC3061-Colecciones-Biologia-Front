@@ -136,6 +136,16 @@ IZVAuo6P8Vb6tGUef97SyLB9UCHIsAqXb5SdnmmFfIy2MjA3h6+x2fTPMdM7YzFd48rpHrnW5Z+y
 				searchtimeout="30000ms">
 					/form[@title&gt;'Coleccion Biologia UVG - Mozilla']//container[@accessiblename='Coleccion Biologia UVG']/element/element[2]/element[4]
 				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="0fa1202c-18fa-4a9d-a6fc-17b7ce639ee4"
+				name="AcercaDeNosotros"
+				refimgid="d91b5ad3-5d3c-4464-a631-5721d0ec44f8"
+				refpath="/form[@title>'Coleccion Biologia UVG - Mozilla']/container/container[1]/element/container/element/element[1]/list/listitem[@accessiblename='Acerca de Nosotros']/link/text[@accessiblename='Acerca de Nosotros']"
+				searchtimeout="30000ms">
+					/form[@title&gt;'Coleccion Biologia UVG - Mozilla']//container[@accessiblename='Coleccion Biologia UVG']/element/element[1]/list[@accessiblerole='List']/listitem[@accessiblename='Acerca de Nosotros']/link[@accessiblename='Acerca de Nosotros']/text[@accessiblename='Acerca de Nosotros']
+				</item>
 				<basepath>
 					/form[@title&gt;'Coleccion Biologia UVG - Mozilla']//container[@accessiblename='Coleccion Biologia UVG']
 				</basepath>
@@ -276,6 +286,16 @@ IZVAuo6P8Vb6tGUef97SyLB9UCHIsAqXb5SdnmmFfIy2MjA3h6+x2fTPMdM7YzFd48rpHrnW5Z+y
 				refpath="/form[@title>'Coleccion Biologia UVG - Mozilla']/container/container[1]/element/container/element/element[2]/element[4]/text[@accessiblename>'Localidad Postal code Postal']"
 				searchtimeout="30000ms">
 					/form[@title&gt;'Coleccion Biologia UVG - Mozilla']/container[@accessiblerole='Grouping']//container[@accessiblename='Coleccion Biologia UVG']/element/element[2]/element[4]/text[@accessiblename&gt;'Localidad Postal code Postal']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="f951dc33-70c6-46c9-86dc-869f31806f8a"
+				name="Next"
+				refimgid="52f4e360-4703-4968-831e-583d8e8b8435"
+				refpath="/form[@title='Coleccion Biologia UVG - Mozilla Firefox']/container[@accessiblerole='Grouping']/container[1]/element[@accessiblerole='None']/container[@accessiblename='Coleccion Biologia UVG']/element[@accessiblerole='None']/element[2]/button[@accessiblename='Next']"
+				searchtimeout="30000ms">
+					/form[@title&gt;'Coleccion Biologia UVG - Mozilla']/container[@accessiblerole='Grouping']//container[@accessiblename='Coleccion Biologia UVG']/element/element[2]/button[@accessiblename='Next']
 				</item>
 				<basepath>
 					/form[@title&gt;'Coleccion Biologia UVG - Mozilla']/container[@accessiblerole='Grouping']//container[@accessiblename='Coleccion Biologia UVG']

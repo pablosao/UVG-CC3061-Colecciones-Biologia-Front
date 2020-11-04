@@ -364,6 +364,7 @@ namespace Colecciones_Biologia
             RepoItemInfo _sobrenosotrosInfo;
             RepoItemInfo _amaziliacandida1Info;
             RepoItemInfo _noneInfo;
+            RepoItemInfo _acercadenosotrosInfo;
 
             /// <summary>
             /// Creates a new ColeccionBiologiaUVG  folder.
@@ -375,6 +376,7 @@ namespace Colecciones_Biologia
                 _sobrenosotrosInfo = new RepoItemInfo(this, "SobreNosotros", "?/?/element/list[@accessiblerole='List']/listitem[@accessiblename='Sobre Nosotros']/link[@accessiblename='Sobre Nosotros']/text[@accessiblename='Sobre Nosotros']", 30000, null, "78877716-3a66-402c-8d23-32d7e9a5649a");
                 _amaziliacandida1Info = new RepoItemInfo(this, "AmaziliaCandida1", "element/list[1]/listitem[@accessiblename='Amazilia candida']/text[@accessiblename='Amazilia candida']", 30000, null, "dd7ebbb1-fd2b-4c94-85d1-b908f3f89771");
                 _noneInfo = new RepoItemInfo(this, "None", "element/element[2]/element[4]", 30000, null, "93ef2700-7885-4f86-83e3-fd3ce5b8d576");
+                _acercadenosotrosInfo = new RepoItemInfo(this, "AcercaDeNosotros", "element/element[1]/list[@accessiblerole='List']/listitem[@accessiblename='Acerca de Nosotros']/link[@accessiblename='Acerca de Nosotros']/text[@accessiblename='Acerca de Nosotros']", 30000, null, "0fa1202c-18fa-4a9d-a6fc-17b7ce639ee4");
             }
 
             /// <summary>
@@ -496,6 +498,30 @@ namespace Colecciones_Biologia
                     return _noneInfo;
                 }
             }
+
+            /// <summary>
+            /// The AcercaDeNosotros item.
+            /// </summary>
+            [RepositoryItem("0fa1202c-18fa-4a9d-a6fc-17b7ce639ee4")]
+            public virtual Ranorex.Text AcercaDeNosotros
+            {
+                get
+                {
+                    return _acercadenosotrosInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AcercaDeNosotros item info.
+            /// </summary>
+            [RepositoryItemInfo("0fa1202c-18fa-4a9d-a6fc-17b7ce639ee4")]
+            public virtual RepoItemInfo AcercaDeNosotrosInfo
+            {
+                get
+                {
+                    return _acercadenosotrosInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -517,6 +543,7 @@ namespace Colecciones_Biologia
             RepoItemInfo _departamento1Info;
             RepoItemInfo _resetInfo;
             RepoItemInfo _localidadpostalcodepostalcodepostalInfo;
+            RepoItemInfo _nextInfo;
 
             /// <summary>
             /// Creates a new ColeccionBiologiaUVG1  folder.
@@ -537,6 +564,7 @@ namespace Colecciones_Biologia
                 _departamento1Info = new RepoItemInfo(this, "Departamento1", "element/element[2]/element[4]/button[1]/text[@accessiblename='Departamento']", 30000, null, "7100e9c4-cbe5-4347-b217-4740e02a348a");
                 _resetInfo = new RepoItemInfo(this, "Reset", "element/element[2]/element[4]/button[@accessiblename='Reset']", 30000, null, "266de929-25a3-467e-b5c5-6de636a77470");
                 _localidadpostalcodepostalcodepostalInfo = new RepoItemInfo(this, "LocalidadPostalCodePostalCodePostal", "element/element[2]/element[4]/text[@accessiblename>'Localidad Postal code Postal']", 30000, null, "d7e7bf43-ed8a-43eb-87a7-2c2156289acb");
+                _nextInfo = new RepoItemInfo(this, "Next", "element/element[2]/button[@accessiblename='Next']", 30000, null, "f951dc33-70c6-46c9-86dc-869f31806f8a");
             }
 
             /// <summary>
@@ -872,6 +900,30 @@ namespace Colecciones_Biologia
                 get
                 {
                     return _localidadpostalcodepostalcodepostalInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Next item.
+            /// </summary>
+            [RepositoryItem("f951dc33-70c6-46c9-86dc-869f31806f8a")]
+            public virtual Ranorex.Button Next
+            {
+                get
+                {
+                    return _nextInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Next item info.
+            /// </summary>
+            [RepositoryItemInfo("f951dc33-70c6-46c9-86dc-869f31806f8a")]
+            public virtual RepoItemInfo NextInfo
+            {
+                get
+                {
+                    return _nextInfo;
                 }
             }
         }

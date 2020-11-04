@@ -6,6 +6,12 @@
 			id="13641e5c-efab-47c9-bfd0-d8132a62bbfa"
 			name="Formulario">
 			</testcase>
+			<testmodule
+			id="1b8426b1-e71e-43eb-9d55-39d7d45a5a4f"
+			name="Recording4"
+			ref="6ef5cfaf-fb2b-4e84-9475-8118d95c78b4"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="1c06be40-f4a2-4b37-87bb-f7203c5a224d"
 			name="Inicio_de_sesion">
@@ -82,6 +88,10 @@
 			reporttemplatefolder=""
 			reportwriteinterval="30000ms">
 			</testsuite>
+			<testcase
+			id="c5a26efb-7a23-44bf-b887-e54542763c74"
+			name="About_Us">
+			</testcase>
 			<teardown
 			id="fb4cb514-85ad-4b20-a4ce-0c038728dd53"
 			name="teardown">
@@ -142,6 +152,14 @@
 						name="Recording3">
 						</testmodule>
 					</testcase>
+					<testcase
+					id="c5a26efb-7a23-44bf-b887-e54542763c74"
+					name="About_Us">
+						<testmodule
+						id="1b8426b1-e71e-43eb-9d55-39d7d45a5a4f"
+						name="Recording4">
+						</testmodule>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -153,13 +171,19 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="13641e5c-efab-47c9-bfd0-d8132a62bbfa">
+			id="3ff266fa-3ddd-4988-9975-9686759bc9a4">
 			</testcontainer>
 			<testcontainer
-			id="3ff266fa-3ddd-4988-9975-9686759bc9a4">
+			id="c5a26efb-7a23-44bf-b887-e54542763c74">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
+		<reference>
+			Ranorex.Plugin.WinForms.Core
+		</reference>
+		<reference>
+			Ranorex.Plugin.Wpf.Core
+		</reference>
 	</references>
 </testsuitedoc>

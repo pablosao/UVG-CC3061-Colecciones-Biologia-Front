@@ -4,8 +4,8 @@
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="Recording3.rxrec" />
     <Element value="Colecciones_Biologia.rxtst" />
+    <Element value="Recording3.rxrec" />
     <Element value="Recording1.rxrec" />
     <Element value="search.rxrec" />
     <Element value="login.rxrec" />

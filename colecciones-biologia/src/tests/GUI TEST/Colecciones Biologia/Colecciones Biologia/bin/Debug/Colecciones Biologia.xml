@@ -19,11 +19,6 @@
             Constructs a new instance.
             </summary>
         </member>
-        <member name="P:Colecciones_Biologia.CloseBrowser.Instance">
-            <summary>
-            Gets a static instance of this recording.
-            </summary>
-        </member>
         <member name="M:Colecciones_Biologia.CloseBrowser.Start">
             <summary>
             Starts the replay of the static recording <see cref="P:Colecciones_Biologia.CloseBrowser.Instance"/>.
@@ -43,19 +38,24 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="P:Colecciones_Biologia.CloseBrowser.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
         <member name="T:Colecciones_Biologia.Colecciones_BiologiaRepository">
             <summary>
             The class representing the Colecciones_BiologiaRepository element repository.
             </summary>
         </member>
-        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepository.Instance">
-            <summary>
-            Gets the singleton class instance representing the Colecciones_BiologiaRepository element repository.
-            </summary>
-        </member>
         <member name="M:Colecciones_Biologia.Colecciones_BiologiaRepository.#ctor">
             <summary>
             Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepository.Instance">
+            <summary>
+            Gets the singleton class instance representing the Colecciones_BiologiaRepository element repository.
             </summary>
         </member>
         <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepository.SelfInfo">
@@ -258,6 +258,16 @@
             The None item info.
             </summary>
         </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGFolder.AcercaDeNosotros">
+            <summary>
+            The AcercaDeNosotros item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGFolder.AcercaDeNosotrosInfo">
+            <summary>
+            The AcercaDeNosotros item info.
+            </summary>
+        </member>
         <member name="T:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder">
             <summary>
             The ColeccionBiologiaUVG1Folder folder.
@@ -408,6 +418,16 @@
             The LocalidadPostalCodePostalCodePostal item info.
             </summary>
         </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.Next">
+            <summary>
+            The Next item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.NextInfo">
+            <summary>
+            The Next item info.
+            </summary>
+        </member>
         <member name="T:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.FirefoxAppFolder">
             <summary>
             The FirefoxAppFolder folder.
@@ -533,11 +553,6 @@
             Constructs a new instance.
             </summary>
         </member>
-        <member name="P:Colecciones_Biologia.login.Instance">
-            <summary>
-            Gets a static instance of this recording.
-            </summary>
-        </member>
         <member name="M:Colecciones_Biologia.login.Start">
             <summary>
             Starts the replay of the static recording <see cref="P:Colecciones_Biologia.login.Instance"/>.
@@ -557,6 +572,11 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="P:Colecciones_Biologia.login.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
         <member name="T:Colecciones_Biologia.navBarUtility">
              <summary>
             The navBarUtility recording.
@@ -570,11 +590,6 @@
         <member name="M:Colecciones_Biologia.navBarUtility.#ctor">
             <summary>
             Constructs a new instance.
-            </summary>
-        </member>
-        <member name="P:Colecciones_Biologia.navBarUtility.Instance">
-            <summary>
-            Gets a static instance of this recording.
             </summary>
         </member>
         <member name="M:Colecciones_Biologia.navBarUtility.Start">
@@ -596,6 +611,11 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="P:Colecciones_Biologia.navBarUtility.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
         <member name="T:Colecciones_Biologia.OpenBrowser">
              <summary>
             The OpenBrowser recording.
@@ -609,11 +629,6 @@
         <member name="M:Colecciones_Biologia.OpenBrowser.#ctor">
             <summary>
             Constructs a new instance.
-            </summary>
-        </member>
-        <member name="P:Colecciones_Biologia.OpenBrowser.Instance">
-            <summary>
-            Gets a static instance of this recording.
             </summary>
         </member>
         <member name="M:Colecciones_Biologia.OpenBrowser.Start">
@@ -635,6 +650,11 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="P:Colecciones_Biologia.OpenBrowser.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
         <member name="T:Colecciones_Biologia.Recording1">
              <summary>
             The Recording1 recording.
@@ -648,11 +668,6 @@
         <member name="M:Colecciones_Biologia.Recording1.#ctor">
             <summary>
             Constructs a new instance.
-            </summary>
-        </member>
-        <member name="P:Colecciones_Biologia.Recording1.Instance">
-            <summary>
-            Gets a static instance of this recording.
             </summary>
         </member>
         <member name="M:Colecciones_Biologia.Recording1.Start">
@@ -674,6 +689,11 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="P:Colecciones_Biologia.Recording1.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
         <member name="T:Colecciones_Biologia.Recording2">
              <summary>
             The Recording2 recording.
@@ -687,11 +707,6 @@
         <member name="M:Colecciones_Biologia.Recording2.#ctor">
             <summary>
             Constructs a new instance.
-            </summary>
-        </member>
-        <member name="P:Colecciones_Biologia.Recording2.Instance">
-            <summary>
-            Gets a static instance of this recording.
             </summary>
         </member>
         <member name="M:Colecciones_Biologia.Recording2.Start">
@@ -713,6 +728,11 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="P:Colecciones_Biologia.Recording2.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
         <member name="T:Colecciones_Biologia.Recording3">
              <summary>
             The Recording3 recording.
@@ -726,11 +746,6 @@
         <member name="M:Colecciones_Biologia.Recording3.#ctor">
             <summary>
             Constructs a new instance.
-            </summary>
-        </member>
-        <member name="P:Colecciones_Biologia.Recording3.Instance">
-            <summary>
-            Gets a static instance of this recording.
             </summary>
         </member>
         <member name="M:Colecciones_Biologia.Recording3.Start">
@@ -752,6 +767,50 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="P:Colecciones_Biologia.Recording3.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="T:Colecciones_Biologia.Recording4">
+             <summary>
+            The Recording4 recording.
+             </summary>
+        </member>
+        <member name="F:Colecciones_Biologia.Recording4.repo">
+            <summary>
+            Holds an instance of the Colecciones_BiologiaRepository repository.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.Recording4.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.Recording4.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Colecciones_Biologia.Recording4.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.Recording4.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Colecciones_Biologia.Recording4.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Recording4.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
         <member name="T:Colecciones_Biologia.search">
              <summary>
             The search recording.
@@ -765,11 +824,6 @@
         <member name="M:Colecciones_Biologia.search.#ctor">
             <summary>
             Constructs a new instance.
-            </summary>
-        </member>
-        <member name="P:Colecciones_Biologia.search.Instance">
-            <summary>
-            Gets a static instance of this recording.
             </summary>
         </member>
         <member name="M:Colecciones_Biologia.search.Start">
@@ -791,6 +845,11 @@
             It can be used to execute recording specific initialization code.
             </summary>
         </member>
+        <member name="P:Colecciones_Biologia.search.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
         <member name="T:Colecciones_Biologia.searchFuncionality">
              <summary>
             The searchFuncionality recording.
@@ -804,11 +863,6 @@
         <member name="M:Colecciones_Biologia.searchFuncionality.#ctor">
             <summary>
             Constructs a new instance.
-            </summary>
-        </member>
-        <member name="P:Colecciones_Biologia.searchFuncionality.Instance">
-            <summary>
-            Gets a static instance of this recording.
             </summary>
         </member>
         <member name="M:Colecciones_Biologia.searchFuncionality.Start">
@@ -828,6 +882,11 @@
             <summary>
             This method gets called right after the recording has been started.
             It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.searchFuncionality.Instance">
+            <summary>
+            Gets a static instance of this recording.
             </summary>
         </member>
         <member name="T:__RxMain.__RxProgram">
