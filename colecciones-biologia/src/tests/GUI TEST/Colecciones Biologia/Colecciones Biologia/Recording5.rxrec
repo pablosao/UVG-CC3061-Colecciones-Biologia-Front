@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="ebe17b9a-25e2-453d-939b-f0ddd11aafcf"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording5"
+	namespace="Colecciones_Biologia">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="39026bcd-d96c-4ea7-8e7b-0bf13e28df15"
+	name="Colecciones_BiologiaRepository"
+	relativepath="Colecciones_BiologiaRepository.rxrep">
+		<codegen
+		classname="Colecciones_BiologiaRepository"
+		namespace="Colecciones_Biologia">
+		</codegen>
+		<rootfolder
+		id="ab6f0686-5f78-49af-81c1-274fbf04a566"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording5.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

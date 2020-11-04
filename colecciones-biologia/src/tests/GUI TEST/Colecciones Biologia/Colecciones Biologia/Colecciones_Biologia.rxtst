@@ -92,6 +92,12 @@
 			id="c5a26efb-7a23-44bf-b887-e54542763c74"
 			name="About_Us">
 			</testcase>
+			<testmodule
+			id="d5a7147c-5e60-4eb9-b1b5-933def9953a1"
+			name="Recording5"
+			ref="ebe17b9a-25e2-453d-939b-f0ddd11aafcf"
+			type="Recording">
+			</testmodule>
 			<teardown
 			id="fb4cb514-85ad-4b20-a4ce-0c038728dd53"
 			name="teardown">
@@ -118,6 +124,10 @@
 						<testmodule
 						id="bebf4d33-a438-4e7b-88aa-860e34a239b4"
 						name="Recording1">
+						</testmodule>
+						<testmodule
+						id="d5a7147c-5e60-4eb9-b1b5-933def9953a1"
+						name="Recording5">
 						</testmodule>
 						<teardown
 						id="fb4cb514-85ad-4b20-a4ce-0c038728dd53"
@@ -171,10 +181,10 @@
 		<testconfiguration
 		name="TestRun">
 			<testcontainer
-			id="3ff266fa-3ddd-4988-9975-9686759bc9a4">
+			id="13641e5c-efab-47c9-bfd0-d8132a62bbfa">
 			</testcontainer>
 			<testcontainer
-			id="c5a26efb-7a23-44bf-b887-e54542763c74">
+			id="3ff266fa-3ddd-4988-9975-9686759bc9a4">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
