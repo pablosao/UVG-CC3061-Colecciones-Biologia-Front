@@ -1,0 +1,848 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Colecciones Biologia</name>
+    </assembly>
+    <members>
+        <member name="T:Colecciones_Biologia.CloseBrowser">
+             <summary>
+            The CloseBrowser recording.
+             </summary>
+        </member>
+        <member name="F:Colecciones_Biologia.CloseBrowser.repo">
+            <summary>
+            Holds an instance of the Colecciones_BiologiaRepository repository.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.CloseBrowser.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.CloseBrowser.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.CloseBrowser.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Colecciones_Biologia.CloseBrowser.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.CloseBrowser.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Colecciones_Biologia.CloseBrowser.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Colecciones_Biologia.Colecciones_BiologiaRepository">
+            <summary>
+            The class representing the Colecciones_BiologiaRepository element repository.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepository.Instance">
+            <summary>
+            Gets the singleton class instance representing the Colecciones_BiologiaRepository element repository.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.Colecciones_BiologiaRepository.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepository.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepository.ApplicationUnderTest">
+            <summary>
+            The ApplicationUnderTest folder.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepository.GettingStartedWithRanorexStudioRa">
+            <summary>
+            The GettingStartedWithRanorexStudioRa folder.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepository.ColeccionBiologiaUVGMozillaFirefox">
+            <summary>
+            The ColeccionBiologiaUVGMozillaFirefox folder.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepository.Firefox">
+            <summary>
+            The Firefox folder.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepository.Form21WhatsAppMozillaFirefox">
+            <summary>
+            The Form21WhatsAppMozillaFirefox folder.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepository.LiteappsMcafeeCom">
+            <summary>
+            The LiteappsMcafeeCom folder.
+            </summary>
+        </member>
+        <member name="T:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ApplicationUnderTestAppFolder">
+            <summary>
+            The ApplicationUnderTestAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ApplicationUnderTestAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ApplicationUnderTest  folder.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ApplicationUnderTestAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ApplicationUnderTestAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="T:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.GettingStartedWithRanorexStudioRaAppFolder">
+            <summary>
+            The GettingStartedWithRanorexStudioRaAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.GettingStartedWithRanorexStudioRaAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new GettingStartedWithRanorexStudioRa  folder.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.GettingStartedWithRanorexStudioRaAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.GettingStartedWithRanorexStudioRaAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.GettingStartedWithRanorexStudioRaAppFolder.ColeccionBiologiaUVG">
+            <summary>
+            The ColeccionBiologiaUVG item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.GettingStartedWithRanorexStudioRaAppFolder.ColeccionBiologiaUVGInfo">
+            <summary>
+            The ColeccionBiologiaUVG item info.
+            </summary>
+        </member>
+        <member name="T:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGMozillaFirefoxAppFolder">
+            <summary>
+            The ColeccionBiologiaUVGMozillaFirefoxAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGMozillaFirefoxAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ColeccionBiologiaUVGMozillaFirefox  folder.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGMozillaFirefoxAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGMozillaFirefoxAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGMozillaFirefoxAppFolder.ColeccionBiologiaUVG2">
+            <summary>
+            The ColeccionBiologiaUVG2 item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGMozillaFirefoxAppFolder.ColeccionBiologiaUVG2Info">
+            <summary>
+            The ColeccionBiologiaUVG2 item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGMozillaFirefoxAppFolder.None">
+            <summary>
+            The None item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGMozillaFirefoxAppFolder.NoneInfo">
+            <summary>
+            The None item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGMozillaFirefoxAppFolder.ColeccionBiologiaUVG">
+            <summary>
+            The ColeccionBiologiaUVG folder.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGMozillaFirefoxAppFolder.ColeccionBiologiaUVG1">
+            <summary>
+            The ColeccionBiologiaUVG1 folder.
+            </summary>
+        </member>
+        <member name="T:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGFolder">
+            <summary>
+            The ColeccionBiologiaUVGFolder folder.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ColeccionBiologiaUVG  folder.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGFolder.Home">
+            <summary>
+            The Home item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGFolder.HomeInfo">
+            <summary>
+            The Home item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGFolder.SobreNosotros">
+            <summary>
+            The SobreNosotros item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGFolder.SobreNosotrosInfo">
+            <summary>
+            The SobreNosotros item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGFolder.AmaziliaCandida1">
+            <summary>
+            The AmaziliaCandida1 item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGFolder.AmaziliaCandida1Info">
+            <summary>
+            The AmaziliaCandida1 item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGFolder.None">
+            <summary>
+            The None item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVGFolder.NoneInfo">
+            <summary>
+            The None item info.
+            </summary>
+        </member>
+        <member name="T:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder">
+            <summary>
+            The ColeccionBiologiaUVG1Folder folder.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new ColeccionBiologiaUVG1  folder.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.LogIn">
+            <summary>
+            The LogIn item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.LogInInfo">
+            <summary>
+            The LogIn item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.Buscar">
+            <summary>
+            The Buscar item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.BuscarInfo">
+            <summary>
+            The Buscar item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.SobreNosotros1">
+            <summary>
+            The SobreNosotros1 item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.SobreNosotros1Info">
+            <summary>
+            The SobreNosotros1 item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.Login1">
+            <summary>
+            The Login1 item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.Login1Info">
+            <summary>
+            The Login1 item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.Text">
+            <summary>
+            The Text item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.TextInfo">
+            <summary>
+            The Text item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.Buscar1">
+            <summary>
+            The Buscar1 item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.Buscar1Info">
+            <summary>
+            The Buscar1 item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.AmaziliaCandida">
+            <summary>
+            The AmaziliaCandida item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.AmaziliaCandidaInfo">
+            <summary>
+            The AmaziliaCandida item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.None">
+            <summary>
+            The None item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.NoneInfo">
+            <summary>
+            The None item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.None1">
+            <summary>
+            The None1 item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.None1Info">
+            <summary>
+            The None1 item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.Departamento">
+            <summary>
+            The Departamento item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.DepartamentoInfo">
+            <summary>
+            The Departamento item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.Departamento1">
+            <summary>
+            The Departamento1 item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.Departamento1Info">
+            <summary>
+            The Departamento1 item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.Reset">
+            <summary>
+            The Reset item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.ResetInfo">
+            <summary>
+            The Reset item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.LocalidadPostalCodePostalCodePostal">
+            <summary>
+            The LocalidadPostalCodePostalCodePostal item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.ColeccionBiologiaUVG1Folder.LocalidadPostalCodePostalCodePostalInfo">
+            <summary>
+            The LocalidadPostalCodePostalCodePostal item info.
+            </summary>
+        </member>
+        <member name="T:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.FirefoxAppFolder">
+            <summary>
+            The FirefoxAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.FirefoxAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Firefox  folder.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.FirefoxAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.FirefoxAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.FirefoxAppFolder.FromThisWebsite">
+            <summary>
+            The FromThisWebsite item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.FirefoxAppFolder.FromThisWebsiteInfo">
+            <summary>
+            The FromThisWebsite item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.FirefoxAppFolder.ColeccionBiologiaUVGMozillaFirefox">
+            <summary>
+            The ColeccionBiologiaUVGMozillaFirefox item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.FirefoxAppFolder.ColeccionBiologiaUVGMozillaFirefoxInfo">
+            <summary>
+            The ColeccionBiologiaUVGMozillaFirefox item info.
+            </summary>
+        </member>
+        <member name="T:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.Form21WhatsAppMozillaFirefoxAppFolder">
+            <summary>
+            The Form21WhatsAppMozillaFirefoxAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.Form21WhatsAppMozillaFirefoxAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Form21WhatsAppMozillaFirefox  folder.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.Form21WhatsAppMozillaFirefoxAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.Form21WhatsAppMozillaFirefoxAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.Form21WhatsAppMozillaFirefoxAppFolder.ColeccionBiologiaUVG">
+            <summary>
+            The ColeccionBiologiaUVG item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.Form21WhatsAppMozillaFirefoxAppFolder.ColeccionBiologiaUVGInfo">
+            <summary>
+            The ColeccionBiologiaUVG item info.
+            </summary>
+        </member>
+        <member name="T:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.LiteappsMcafeeComAppFolder">
+            <summary>
+            The LiteappsMcafeeComAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.LiteappsMcafeeComAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new LiteappsMcafeeCom  folder.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.LiteappsMcafeeComAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.LiteappsMcafeeComAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.LiteappsMcafeeComAppFolder.McAfeeWebProtection">
+            <summary>
+            The McAfeeWebProtection item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.LiteappsMcafeeComAppFolder.McAfeeWebProtectionInfo">
+            <summary>
+            The McAfeeWebProtection item info.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.LiteappsMcafeeComAppFolder.Hilite">
+            <summary>
+            The Hilite item.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Colecciones_BiologiaRepositoryFolders.LiteappsMcafeeComAppFolder.HiliteInfo">
+            <summary>
+            The Hilite item info.
+            </summary>
+        </member>
+        <member name="T:Colecciones_Biologia.login">
+             <summary>
+            The login recording.
+             </summary>
+        </member>
+        <member name="F:Colecciones_Biologia.login.repo">
+            <summary>
+            Holds an instance of the Colecciones_BiologiaRepository repository.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.login.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.login.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.login.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Colecciones_Biologia.login.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.login.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Colecciones_Biologia.login.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Colecciones_Biologia.navBarUtility">
+             <summary>
+            The navBarUtility recording.
+             </summary>
+        </member>
+        <member name="F:Colecciones_Biologia.navBarUtility.repo">
+            <summary>
+            Holds an instance of the Colecciones_BiologiaRepository repository.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.navBarUtility.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.navBarUtility.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.navBarUtility.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Colecciones_Biologia.navBarUtility.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.navBarUtility.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Colecciones_Biologia.navBarUtility.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Colecciones_Biologia.OpenBrowser">
+             <summary>
+            The OpenBrowser recording.
+             </summary>
+        </member>
+        <member name="F:Colecciones_Biologia.OpenBrowser.repo">
+            <summary>
+            Holds an instance of the Colecciones_BiologiaRepository repository.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.OpenBrowser.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.OpenBrowser.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.OpenBrowser.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Colecciones_Biologia.OpenBrowser.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.OpenBrowser.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Colecciones_Biologia.OpenBrowser.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Colecciones_Biologia.Recording1">
+             <summary>
+            The Recording1 recording.
+             </summary>
+        </member>
+        <member name="F:Colecciones_Biologia.Recording1.repo">
+            <summary>
+            Holds an instance of the Colecciones_BiologiaRepository repository.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.Recording1.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Recording1.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.Recording1.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Colecciones_Biologia.Recording1.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.Recording1.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Colecciones_Biologia.Recording1.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Colecciones_Biologia.Recording2">
+             <summary>
+            The Recording2 recording.
+             </summary>
+        </member>
+        <member name="F:Colecciones_Biologia.Recording2.repo">
+            <summary>
+            Holds an instance of the Colecciones_BiologiaRepository repository.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.Recording2.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Recording2.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.Recording2.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Colecciones_Biologia.Recording2.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.Recording2.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Colecciones_Biologia.Recording2.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Colecciones_Biologia.Recording3">
+             <summary>
+            The Recording3 recording.
+             </summary>
+        </member>
+        <member name="F:Colecciones_Biologia.Recording3.repo">
+            <summary>
+            Holds an instance of the Colecciones_BiologiaRepository repository.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.Recording3.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.Recording3.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.Recording3.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Colecciones_Biologia.Recording3.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.Recording3.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Colecciones_Biologia.Recording3.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Colecciones_Biologia.search">
+             <summary>
+            The search recording.
+             </summary>
+        </member>
+        <member name="F:Colecciones_Biologia.search.repo">
+            <summary>
+            Holds an instance of the Colecciones_BiologiaRepository repository.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.search.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.search.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.search.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Colecciones_Biologia.search.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.search.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Colecciones_Biologia.search.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:Colecciones_Biologia.searchFuncionality">
+             <summary>
+            The searchFuncionality recording.
+             </summary>
+        </member>
+        <member name="F:Colecciones_Biologia.searchFuncionality.repo">
+            <summary>
+            Holds an instance of the Colecciones_BiologiaRepository repository.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.searchFuncionality.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:Colecciones_Biologia.searchFuncionality.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.searchFuncionality.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:Colecciones_Biologia.searchFuncionality.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:Colecciones_Biologia.searchFuncionality.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:Colecciones_Biologia.searchFuncionality.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:__RxMain.__RxProgram">
+            <summary>
+            Modified Program class that ensures that the Ranorex System gets initialized and cleaned up
+            correctly. This file is auto-generated during project build. This class will invoke the
+            original 'Main' method implementation as needed.
+            </summary>
+        </member>
+        <member name="M:__RxMain.__RxProgram.Main(System.String[])">
+            <summary>
+            The entry point of the application.
+            </summary>
+            <param name="args">Contains any number of command line arguments.</param>
+            <returns>The return value of the projects original 'Main' implementation.</returns>
+        </member>
+    </members>
+</doc>

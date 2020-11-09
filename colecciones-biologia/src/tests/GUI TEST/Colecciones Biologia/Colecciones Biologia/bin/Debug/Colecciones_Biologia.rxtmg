@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="9.3">
+	<testsuiteentryhierarchy>
+		<flatlistofchildren>
+			<modulegroups
+			id="9b1b3a3f-2f4c-444d-8514-e3cf9a7d00fc"
+			name="Colecciones_Biologia">
+			</modulegroups>
+		</flatlistofchildren>
+		<childhierarchy>
+			<modulegroups
+			id="9b1b3a3f-2f4c-444d-8514-e3cf9a7d00fc"
+			name="Colecciones_Biologia">
+			</modulegroups>
+		</childhierarchy>
+	</testsuiteentryhierarchy>
+</modulegroupdoc>

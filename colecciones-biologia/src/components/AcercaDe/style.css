@@ -1,0 +1,186 @@
+.about-page{
+  overflow: hidden;
+  position: relative;
+  /*background-color: blue;*/
+}
+
+.about-container {
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 90.5vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.about-container2 {
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row !important;
+  width: 100%;
+}
+
+.about-title {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 75%;
+}
+
+.about-img {
+  background-image: 
+      /* your image */ url("https://c.pxhere.com/photos/40/dd/ladybugs_ladybirds_bugs_insects_couple_love_two_nature-544518.jpg!d");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.about-container .col-logo {
+  margin-top: -230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*padding: 1rem;*/
+  /*background-color: black;*/
+}
+
+.about-container .col-logo img {
+  /*padding: 2rem;*/
+  width: 15rem;
+}
+
+.about-img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.about-container .about-field {
+  margin: 2rem;
+  width: 45%;
+}
+
+.about-button{
+  width: min-content;
+  height: 3rem;
+  background-color: rgb(99, 95, 95);
+  color: rgb(255, 255, 255);
+  border-radius: 50px;
+  font-size: medium;
+  padding: 1rem;
+}
+
+@media (min-width: 960px) {
+  .about-img {
+    background-image: 
+      /* your image */ url("https://c.pxhere.com/photos/40/dd/ladybugs_ladybirds_bugs_insects_couple_love_two_nature-544518.jpg!d");
+    background-size: cover;
+  }
+  .texto-left{
+    margin-top: 50px;
+    margin-right: 15px;
+    /*width: 100%;*/
+    height: 100%;
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  
+  .texto-right{
+    margin-top: 50px;
+    margin-left: 15px;
+    /*width: 100%;*/
+    height: 100%;
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    align-content: center;
+    
+  }
+}
+
+@media (max-width: 992px) {
+  .about-img {
+    background-size: cover;
+  }
+
+  .texto-left{
+    margin-top: 50px;
+    margin-right: 15px;
+    width: 90%;
+    height: 100%;
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  
+  .texto-right{
+    margin-top: 50px;
+    margin-left: 52px;
+    margin-right: 5vw;
+    width: 90%;
+    height: 100%;
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  
+  iframe{
+    border-radius: 20px;
+    /*margin-left: 25px;*/
+    width: 90%;
+  }  
+}
+
+
+
+.carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+  margin-left: 6px;
+  border-radius: 50%;
+}
+
+
+
+.about .left{
+  padding:2% 0;
+  float: left;
+  width:50%;
+  display: inline-block;
+  
+  
+}
+
+.about .right{
+  width:50%;
+  height: 50%;
+  display:inline-block;
+  
+}
+
+
+
+iframe{
+  border-radius: 20px;
+  margin-left: 25px;
+}
+
