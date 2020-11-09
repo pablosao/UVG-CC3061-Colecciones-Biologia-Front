@@ -10,7 +10,7 @@ import "./style.css";
 
 const Login = ({ isAuthenticated }) => {
   if (isAuthenticated) {
-    return <Redirect to="/feed" />;
+    return <Redirect to="/admin" />;
   }
   return (
     <div className="main-login-container">
