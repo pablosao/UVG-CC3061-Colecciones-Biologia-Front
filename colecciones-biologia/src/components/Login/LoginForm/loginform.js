@@ -3,10 +3,10 @@ import { connect } from "react-redux";
 import { Field, reduxForm } from "redux-form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faLock } from "@fortawesome/free-solid-svg-icons";
-// import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom"
 
-// import * as selectors from "../../../reducers";
-// import * as actions from "../../../actions/auth";
+import * as selectors from "../../../reducers";
+import * as actions from "../../../actions/auth";
 
 import "./style.css";
 
@@ -39,13 +39,13 @@ const renderInput = ({ input, meta, label }) => (
   </div>
 );
 
-const LoginForm = ({ handleSubmit, submitting, onSubmit }) => {
+const LoginForm = ({ handleSubmit, submitting, onSubmit, error }) => {
   return (
     <div className="login-form">
       <h2>Iniciar Sesión</h2>
       <form onSubmit={handleSubmit((values) => onSubmit(values))}>
         <Field
-          name="user"
+          name="email"
           type="text"
           label="Usuario"
           component={renderInput}
@@ -56,6 +56,7 @@ const LoginForm = ({ handleSubmit, submitting, onSubmit }) => {
           label="Contraseña"
           component={renderInput}
         />
+        {error ? <span className="error-message">{error}</span> : null}
         <button className="login-btn" type="submit" disabled={submitting}>
           Login
         </button>
@@ -85,15 +86,15 @@ export default reduxForm({
 })(
   connect(
     (state) => ({
-      //   isLoading: selectors.getIsAuthenticating(state),
-      //   error: selectors.getAuthenticatingError(state),
-      //   isAuthenticated: selectors.isAuthenticated(state),
-      //   authUsername: selectors.getAuthUsername(state),
+      isLoading: selectors.getIsAuthenticating(state),
+      error: selectors.getAuthenticatingError(state),
+      isAuthenticated: selectors.isAuthenticated(state),
+      authUsername: selectors.getAuthUsername(state),
     }),
     (dispatch) => ({
       onSubmit(values) {
-        // const { user, password } = values;
-        // dispatch(actions.startLogin(user, password));
+        const { email, password } = values;
+        dispatch(actions.startLogin(email, password));
       },
     })
   )(LoginForm)

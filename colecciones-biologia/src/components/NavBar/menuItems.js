@@ -5,7 +5,7 @@ const MenuItems = [
     cName: "nav-links",
   },
   {
-    title: "  Formulario",
+    title: "Formulario",
     url: "/formulario",
     cName: "nav-links",
   },
@@ -19,9 +19,6 @@ const MenuItems = [
     url: "/sign-in",
     cName: "nav-links-mobile",
   },
-
-
-  
 ];
 
 export { MenuItems };

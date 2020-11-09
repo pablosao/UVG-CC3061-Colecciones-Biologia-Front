@@ -6,6 +6,7 @@ import * as authActions from "../actions/auth";
 import * as types from "../types/auth";
 
 function* login(action) {
+  console.log("Llega", action);
   try {
     const response = yield call(fetch, `${API_BASE_URL}/api-token-auth/`, {
       method: "POST",
