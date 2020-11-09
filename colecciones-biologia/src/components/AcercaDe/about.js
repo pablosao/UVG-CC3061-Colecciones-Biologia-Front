@@ -101,7 +101,7 @@ const style3 = {
   </div>
   <div class='col col-md-4'>
     <div class='texto-left'>
-      <h2>Gabriela Alfaro</h2>
+      <h2>Zabdi Lopez </h2>
       <hr></hr>
       <h5>Tel:</h5>
       <h5>Email:</h5>
@@ -109,9 +109,45 @@ const style3 = {
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
       </div>
   </div>
+  
   <div class='col col-md-4 '>
   <div class='texto-right'>
-    <h2>Zabdy Moises</h2>
+    <h2>Maria Renée Alvarez</h2>
+    <hr></hr>
+      <h5>Tel:</h5>
+      <h5>Email:</h5>
+      <h5>Oficina:</h5>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+      
+    </div>
+  </div>
+  <div class='col col-md-2'>
+  </div>
+</div>
+<div class='row'>
+  <br></br>
+  <div class='col col-md-1'/>
+  <div class='col col-md-10'>
+   
+  </div>
+  <div class='col col-md-1'/>
+  
+  <div class='col col-md-2'>
+  </div>
+  <div class='col col-md-4'>
+    <div class='texto-left'>
+      <h2>Jiichiro Yoshimoto</h2>
+      <hr></hr>
+      <h5>Tel:</h5>
+      <h5>Email:</h5>
+      <h5>Oficina:</h5>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+      </div>
+  </div>
+  
+  <div class='col col-md-4 '>
+  <div class='texto-right'>
+    <h2>Gabriela Alfaro</h2>
     <hr></hr>
       <h5>Tel:</h5>
       <h5>Email:</h5>

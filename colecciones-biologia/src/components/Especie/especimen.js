@@ -32,9 +32,11 @@ const step1Content = <div>
                       Departamento
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="#">Guatemala</a>
+                      <a class="dropdown-item" href="#">Zacapa</a>
+                      <a class="dropdown-item" href="#">Izabal</a>
+                      <a class="dropdown-item" href="#">Huehuetenango</a>
+
                     </div>
                   </div>
                 </div>
@@ -45,9 +47,9 @@ const step1Content = <div>
                       Municipio
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="#">Guatemala</a>
+                      <a class="dropdown-item" href="#">Chinautla</a>
+                      <a class="dropdown-item" href="#">Palencia</a>
                     </div>
                   </div>
                 </div>
@@ -103,9 +105,9 @@ const step2Content = <div>
                     Reino
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" >Action</a>
-                    <a class="dropdown-item" >Another action</a>
-                    <a class="dropdown-item" >Something else here</a>
+                    <a class="dropdown-item" >Animalia</a>
+                    <a class="dropdown-item" >Plantae</a>
+                    <a class="dropdown-item" >Fungi</a>
                   </div>
                 </div>
               </div>
