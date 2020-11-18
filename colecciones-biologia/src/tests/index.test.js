@@ -1,5 +1,4 @@
 
-
 import reducer from '../reducers/index'
 
 describe('index reducers', () => {
