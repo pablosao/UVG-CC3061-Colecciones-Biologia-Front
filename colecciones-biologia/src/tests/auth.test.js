@@ -5,7 +5,7 @@ describe('auth reducers', () => {
     it('should return auth state', () => {
         expect(reducer(undefined, false)).toEqual(
             {
-            
+                
                
                 }
 
