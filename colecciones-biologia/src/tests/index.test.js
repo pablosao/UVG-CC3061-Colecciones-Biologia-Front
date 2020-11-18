@@ -1,4 +1,4 @@
-//Elaboradas por Andrea Elias 
+
 
 import reducer from '../reducers/index'
 
