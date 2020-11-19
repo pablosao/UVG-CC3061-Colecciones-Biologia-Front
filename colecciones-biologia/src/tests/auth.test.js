@@ -1,16 +1,16 @@
+import reducer from '../reducers/auth'
+import * as types from '../actions/auth'
 
-import reducer from '../reducers/index'
-
-describe('index reducers', () => {
-    it('should return click state', () => {
+describe('auth reducers', () => {
+    it('should return auth state', () => {
         expect(reducer(undefined, false)).toEqual(
             {
-            
                 form: {},
                 navbar: {
                 hamburgerMenuClicked: false},
                 search: { 
                 suggestions: []}
+               
                 }
 
 
