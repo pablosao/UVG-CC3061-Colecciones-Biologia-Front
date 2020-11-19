@@ -14,14 +14,11 @@ const Search = () => {
         <div className="search-field">
           <SearchField />
         </div>
-        <div className="search-button">
-          Buscar
-        </div>
         {/* <img
             src="https://www.picsporadic.com/wp-content/uploads/2019/03/guatemala-atitlan-150315-016-hdr-gx1_web.jpg"
             alt=""
           /> */}
-        </div>
+      </div>
     </div>
   );
 };

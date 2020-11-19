@@ -1,5 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
+import { Field, reduxForm } from "redux-form";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 import * as selectors from "../../../reducers";
 import * as actions from "../../../actions/search";
@@ -34,11 +37,11 @@ const exampleSearchList = [
   "Chaetura pelagica",
 ];
 
-const SearchField = ({ onTextChange, suggestions }) => {
+const renderInput = ({ input, meta, suggestions }) => {
   return (
-    <div className="search-form">
+    <div>
       <div className="search-input">
-        <input placeholder="Buscar..." onChange={onTextChange} type="text" />
+        <input {...input} placeholder="Buscar..." type="text" />
       </div>
       {suggestions ? (
         <div className="search-suggestions">
@@ -53,19 +56,63 @@ const SearchField = ({ onTextChange, suggestions }) => {
   );
 };
 
-export default connect(
-  (state) => ({
-    suggestions: selectors.getSearchSuggestions(state),
-  }),
-  (dispatch) => ({
-    onTextChange(text) {
-      const { value } = text.target;
-      let suggestions = [];
-      if (value.length > 0) {
-        const regex = new RegExp(`^${value}`, "i");
-        suggestions = exampleSearchList.sort().filter((v) => regex.test(v));
-        dispatch(actions.foundSuggestions({ suggestions }));
-      }
-    },
-  })
-)(SearchField);
+const SearchField = ({
+  onTextChange,
+  suggestions,
+  handleSubmit,
+  submitting,
+  onSubmit,
+}) => {
+  return (
+    <div className="search-form">
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <Field
+          name="search"
+          placeholder="Buscar..."
+          onChange={onTextChange}
+          suggestions={suggestions}
+          component={renderInput}
+        />
+        <button className="search-btn" type="submit" disabled={submitting}>
+          <FontAwesomeIcon icon={faSearch} />
+        </button>
+      </form>
+    </div>
+  );
+};
+
+const validate = (values) => {
+  const errors = {};
+
+  if (!values.search) {
+    errors.emptySearch = "No se pueden hacer busquedas vacias.";
+  }
+
+  return errors;
+};
+
+export default reduxForm({
+  form: "SearchForm",
+  destroyOnUnmount: false,
+  validate,
+})(
+  connect(
+    (state) => ({
+      suggestions: selectors.getSearchSuggestions(state),
+    }),
+    (dispatch) => ({
+      onTextChange(text) {
+        const { value } = text.target;
+        let suggestions = [];
+        if (value.length > 0) {
+          const regex = new RegExp(`^${value}`, "i");
+          suggestions = exampleSearchList.sort().filter((v) => regex.test(v));
+          dispatch(actions.foundSuggestions({ suggestions }));
+        }
+      },
+      onSubmit(values) {
+        console.log(values.search);
+      },
+    })
+  )(SearchField)
+);

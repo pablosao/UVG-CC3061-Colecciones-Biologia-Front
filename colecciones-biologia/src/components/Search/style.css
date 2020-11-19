@@ -39,13 +39,12 @@
   position: absolute;
 }
 
-
 .search-container .search-field {
   margin: 2rem;
   width: 45%;
 }
 
-.search-button{
+.search-button {
   width: min-content;
   height: 3rem;
   background-color: rgb(99, 95, 95);

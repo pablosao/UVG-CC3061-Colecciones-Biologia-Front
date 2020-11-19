@@ -9,16 +9,23 @@ import * as actions from "../../actions/navbar";
 import * as authActions from "../../actions/auth";
 
 import { MenuItems } from "./menuItems";
+import SearchField from "../Search/SearchField/searchfield";
 import logo from "../../img/logo004.png";
 import "./style.css";
 import Button from "./button";
 
 const NavBar = ({ clicked, onClick, isAuthenticated }) => {
+  const location = window.location.pathname.split("/");
   return (
     <nav className="NavBarItems">
       <div className="navbar-logo">
         <img src={logo} alt="" />
       </div>
+      {location[1] === "" ? null : (
+        <div className="nav-bar-search">
+          <SearchField />
+        </div>
+      )}
       <div
         className="menu-icon"
         onClick={() => {
