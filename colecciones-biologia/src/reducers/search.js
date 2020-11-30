@@ -2,6 +2,17 @@ import { combineReducers } from "redux";
 
 import * as types from "../types/search";
 
+const searching = (state = null, action) => {
+  switch (action.type) {
+    case types.SUGGESTIONS_SEARCHING:
+      return action.payload.search;
+    case types.SUGGESTIONS_FOUNDED:
+      return null;
+    default:
+      return state;
+  }
+};
+
 const suggestions = (state = [], action) => {
   switch (action.type) {
     case types.SUGGESTIONS_FOUNDED:
@@ -12,6 +23,7 @@ const suggestions = (state = [], action) => {
 };
 
 const search = combineReducers({
+  searching,
   suggestions,
 });
 

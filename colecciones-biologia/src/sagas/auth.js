@@ -6,7 +6,6 @@ import * as authActions from "../actions/auth";
 import * as types from "../types/auth";
 
 function* login(action) {
-  console.log("Llega", action);
   try {
     const response = yield call(fetch, `${API_BASE_URL}/api-token-auth/`, {
       method: "POST",
@@ -24,7 +23,7 @@ function* login(action) {
       yield put(authActions.failLogin(non_field_errors[0]));
     }
   } catch (error) {
-    yield put(authActions.failLogin("Falló horrible la conexión mano"));
+    yield put(authActions.failLogin("Authentication Error. No server found."));
   }
 }
 
@@ -58,7 +57,7 @@ function* refreshToken(action) {
     } catch (error) {
       // TODO: poner un redirect al home (login)
       yield put(
-        authActions.failTokenRefresh("Falló horrible la conexión mano")
+        authActions.failTokenRefresh("Authentication Error. No server found.")
       );
     }
   }

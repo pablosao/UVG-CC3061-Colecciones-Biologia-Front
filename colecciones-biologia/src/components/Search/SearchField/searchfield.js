@@ -48,7 +48,7 @@ const renderInput = ({ input, meta, suggestions }) => {
           <ul>
             {suggestions.map((suggestion, index) => (
               <li className="suggestion" key={index}>
-                {suggestion}
+                {suggestion.common_name}
               </li>
             ))}
           </ul>
@@ -105,11 +105,8 @@ export default reduxForm({
     (dispatch) => ({
       onTextChange(text) {
         const { value } = text.target;
-        let suggestions = [];
         if (value.length > 0) {
-          const regex = new RegExp(`^${value}`, "i");
-          suggestions = exampleSearchList.sort().filter((v) => regex.test(v));
-          dispatch(actions.foundSuggestions({ suggestions }));
+          dispatch(actions.searchSuggestions(value));
         }
       },
       onSubmit(values) {
