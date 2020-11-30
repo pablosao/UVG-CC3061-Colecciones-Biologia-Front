@@ -58,6 +58,14 @@
   border-radius: 2rem;
 }
 
+.suggestion:hover {
+  background-color: #3b3a3c;
+  color: white;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 .search-btn:hover {
   color: #3b3a3c;
   background: white;

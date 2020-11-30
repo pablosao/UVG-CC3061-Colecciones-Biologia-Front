@@ -47,7 +47,9 @@ const renderInput = ({ input, meta, suggestions }) => {
         <div className="search-suggestions">
           <ul>
             {suggestions.map((suggestion, index) => (
-              <li key={index}>{suggestion}</li>
+              <li className="suggestion" key={index}>
+                {suggestion}
+              </li>
             ))}
           </ul>
         </div>
