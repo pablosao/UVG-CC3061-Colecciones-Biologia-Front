@@ -8,13 +8,13 @@ import "./style.css";
 
 const Search = ({ searching }) => {
   if (searching) {
-    return <Redirect to="/test" />;
+    return <Redirect to="/resultados" />;
   }
   return (
     <div className="search-container">
       <div className="search-img" />
       <div className="search-title">
-        <h1>TODO UN MUNDO POR DESCUBRIR {}</h1>
+        <h1>TODO UN MUNDO POR DESCUBRIR</h1>
       </div>
       <div className="search-container2">
         <div className="search-field">

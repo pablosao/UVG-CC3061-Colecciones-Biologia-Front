@@ -29,7 +29,7 @@ const renderInput = ({ input, meta, label }) => (
       <h5>{label}</h5>
       <input
         {...input}
-        className="input"
+        className="input-text"
         type={label === "Contraseña" ? "password" : "text"}
       />
     </div>

@@ -1,0 +1,10 @@
+Field {
+  background-color: aqua;
+}
+
+.input-text{
+  height: 100%;
+  color: black;
+  border-bottom: transparent;
+  background-color: gold;
+}

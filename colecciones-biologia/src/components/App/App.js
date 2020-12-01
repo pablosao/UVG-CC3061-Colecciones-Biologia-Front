@@ -15,6 +15,7 @@ import NewEspecie from "../Especie/especimen";
 import Admin from "../Admin/admin";
 import VistaEspecie from "../VistaEspecie/vistaEspecie";
 import Departamento from "../Departamento/departamento";
+import Results from "../Resultados/results"
 import "./App.css";
 import styles from "./App.css";
 
@@ -31,8 +32,9 @@ const App = () => {
           <Route path="/" exact component={Search} />
           <Route path="/sign-in" exact component={Login} />
           <Route path="/admin" component={Admin} />
-          <Route path="/view-specie" component={VistaEspecie} />
-          <Route path="/deparamento" component={Departamento} />
+          <Route path="/view-specie/:id" component={VistaEspecie} />
+          <Route path="/departamento" component={Departamento} />
+          <Route path="/resultados" component={Results} />
           <Route path="/" component={Footer} />
         </Router>
       </PersistGate>
