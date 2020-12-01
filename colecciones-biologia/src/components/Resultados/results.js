@@ -35,7 +35,7 @@ const Results = ({ searching, isAuthenticated }) => {
                     <th scope="row">{data.scientific_name}</th>
                     <td>{data.common_name}</td>
                     <td>{data.departamento.description}</td>
-                    {isAuthenticated ? <td>{data.location}</td> : null}
+                    {isAuthenticated ? <td>...</td> : null}
                   </tr>
                 ))}
                 <br></br>
