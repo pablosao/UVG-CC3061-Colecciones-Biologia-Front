@@ -5,6 +5,7 @@ import * as formActions from "../actions/form";
 import * as types from "../types/form";
 
 function* getCountries(action) {
+  console.log("lLEGA", action);
   try {
     const response = yield call(fetch, `${API_BASE_URL}/api/countries/`, {
       method: "GET",
@@ -25,7 +26,7 @@ function* getCountries(action) {
 }
 
 export function* watchGetCountries() {
-  yield takeEvery(types.COUNTRIES_FOUND, getCountries);
+  yield takeEvery(types.GET_COUNTRIES, getCountries);
 }
 
 function* getDepartamentos(action) {
@@ -49,7 +50,7 @@ function* getDepartamentos(action) {
 }
 
 export function* watchGetDepartamentos() {
-  yield takeEvery(types.DEPARTAMENTOS_FOUND, getDepartamentos);
+  yield takeEvery(types.GET_DEPARTAMENTOS, getDepartamentos);
 }
 
 function* getMunicipios(action) {
@@ -73,7 +74,7 @@ function* getMunicipios(action) {
 }
 
 export function* watchGetMunicipios() {
-  yield takeEvery(types.MUNICIPIOS_FOUND, getMunicipios);
+  yield takeEvery(types.GET_MUNICIPIOS, getMunicipios);
 }
 
 function* getLifeStages(action) {
@@ -97,7 +98,7 @@ function* getLifeStages(action) {
 }
 
 export function* watchGetLifeStages() {
-  yield takeEvery(types.LIFE_STAGE_FOUND, getLifeStages);
+  yield takeEvery(types.GET_LIFE_STAGE, getLifeStages);
 }
 
 function* getOrganismConservation(action) {
@@ -125,7 +126,7 @@ function* getOrganismConservation(action) {
 }
 
 export function* watchGetOrganismConservation() {
-  yield takeEvery(types.ORGANISM_CONSERVATION_FOUND, getOrganismConservation);
+  yield takeEvery(types.GET_ORGANISM_CONSERVATION, getOrganismConservation);
 }
 
 function* getRegistrationBases(action) {
@@ -153,5 +154,5 @@ function* getRegistrationBases(action) {
 }
 
 export function* watchGetRegistrationBases() {
-  yield takeEvery(types.REGISTRATION_BASE_FOUND, getRegistrationBases);
+  yield takeEvery(types.GET_REGISTRATION_BASE, getRegistrationBases);
 }
