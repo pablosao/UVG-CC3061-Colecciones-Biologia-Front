@@ -5,12 +5,14 @@ import navbar, * as navbarSelectors from "./navbar";
 import search, * as searchSelectors from "./search";
 import auth, * as authSelectors from "./auth";
 import specimenForm, * as specimenFormSelectors from "./form";
+import selectedSpecies, * as selectedSpeciesSelectors from "./speciesSelected";
 
 const reducer = combineReducers({
   navbar,
   search,
   auth,
   specimenForm,
+  selectedSpecies,
   form: formReducer,
 });
 
@@ -58,3 +60,7 @@ export const getOrganismConservations = (state) =>
   specimenFormSelectors.getOrganismConservation(state.specimenForm);
 export const getRegistrationBases = (state) =>
   specimenFormSelectors.getRegistrationBases(state.specimenForm);
+
+// Selected Species Selectors
+export const getSelectedSpecies = (state) =>
+  selectedSpeciesSelectors.getSelectedSpecies(state.selectedSpecies);

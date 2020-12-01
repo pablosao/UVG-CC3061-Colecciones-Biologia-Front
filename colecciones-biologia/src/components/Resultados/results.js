@@ -1,16 +1,15 @@
 import React from "react";
-import { Redirect, useParams } from "react-router-dom";
+import { Link, Redirect, useParams } from "react-router-dom";
 import { connect } from "react-redux";
-//import SearchField from "./SearchField/searchfield";
 import * as selectors from "../../reducers";
+import * as actions from "../../actions/selectedSpecies";
 
-//import "./style.css";
+import "./styles.css";
 
-const Results = ({ searching, isAuthenticated }) => {
-  //const { resultados } = this.props;
-  console.log(searching);
-  //const {id} = useParams()
-
+const Results = ({ searching, isAuthenticated, onClick, selectedSpecies }) => {
+  if (selectedSpecies) {
+    return <Redirect to={`/view-species/${selectedSpecies.id}`} />;
+  }
   if (searching) {
     return (
       <div>
@@ -22,7 +21,7 @@ const Results = ({ searching, isAuthenticated }) => {
             <hr></hr>
             <table class="table">
               <thead>
-                <tr>
+                <tr className="table-result">
                   <th scope="col">Nombre Científico</th>
                   <th scope="col">Nombre Común</th>
                   <th scope="col">Departamento</th>
@@ -31,7 +30,7 @@ const Results = ({ searching, isAuthenticated }) => {
               </thead>
               <tbody>
                 {searching.map((data, idx) => (
-                  <tr>
+                  <tr key={idx} onClick={() => onClick(data)}>
                     <th scope="row">{data.scientific_name}</th>
                     <td>{data.common_name}</td>
                     <td>{data.departamento.description}</td>
@@ -46,11 +45,18 @@ const Results = ({ searching, isAuthenticated }) => {
       </div>
     );
   }
-
   return <div>Hola</div>;
 };
 
-export default connect((state) => ({
-  searching: selectors.getSearchResults(state),
-  isAuthenticated: selectors.isAuthenticated(state),
-}))(Results);
+export default connect(
+  (state) => ({
+    searching: selectors.getSearchResults(state),
+    isAuthenticated: selectors.isAuthenticated(state),
+    selectedSpecies: selectors.getSelectedSpecies(state),
+  }),
+  (dispatch) => ({
+    onClick(speciesInfo) {
+      dispatch(actions.speciesSecelcted(speciesInfo));
+    },
+  })
+)(Results);
