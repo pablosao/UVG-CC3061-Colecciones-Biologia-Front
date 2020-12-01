@@ -1,13 +1,18 @@
 import React from "react";
 import logo from "../../img/logocolecciones.png";
 import {Styles} from "./style.scss";
+import { connect } from "react-redux";
 // import the progress bar
+import component from 'react';
 import StepProgressBar from 'react-step-progress';
 // import the stylesheet
 import 'react-step-progress/dist/index.css';
+import * as selectors from "../../reducers";
+
 
 //datos generales
-const step1Content = <div>
+const step1Content = 
+<div>
   <h3>Datos Generales</h3>
   <div class="animation-container">
               <form action="" name="form-step-1">
@@ -32,10 +37,10 @@ const step1Content = <div>
                       País
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Guatemala</a>
-                      <a class="dropdown-item" href="#">México</a>
-                      <a class="dropdown-item" href="#">Belice</a>
-                      <a class="dropdown-item" href="#">Honduras</a>
+                      {/*countries.map((data, idx) => (
+                      <a class="dropdown-item" href="#">{data.description}</a>
+                      ))*/}
+                
 
                     </div>
                   </div>
@@ -109,7 +114,7 @@ const step1Content = <div>
                 </div>
         </form>
   </div>
-  </div>;
+  </div>
 const step2Content = <div>
 <h3>Datos Generales</h3>
 <div class="animation-container">
@@ -240,7 +245,15 @@ const onFormSubmit = () =>{
 }
 
 
-const NewEspecie = () => {
+const NewEspecie = ({
+  countries, 
+  departments,
+  municipios,
+  lifeStage,
+  conservation,
+  baseRegistro,
+}) => {
+  console.log(countries)
   return (
     <div className="especimen-container">
       <section class="section">
@@ -250,9 +263,6 @@ const NewEspecie = () => {
         onSubmit={onFormSubmit}
         steps={[
           {
-            /*label: 'Step 1',
-            subtitle: '%',
-            name: 'step 1',*/
             content: step1Content,
           },
           {
@@ -272,8 +282,11 @@ const NewEspecie = () => {
   );
 };
 
-
-
-
-
-export default NewEspecie;
+export default connect((state) => ({
+  countries: selectors.getCountries(state),
+  departments: selectors.getDepartamentos(state),
+  municipios: selectors.getMunicipios(state),
+  lifeStage: selectors.getLifeStages(state),
+  conservation: selectors.getOrganismConservations(state),
+  baseRegistro: selectors.getRegistrationBases(state),
+}))(NewEspecie);

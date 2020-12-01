@@ -36,7 +36,7 @@ const Results = ({ searching }) => {
                 <td>{data.common_name}</td>
                 <td>{data.id}</td>
                 <td>{data.location}</td>
-              </tr>))}
+            </tr>))}
           <br></br>
         </tbody>
       </table>
