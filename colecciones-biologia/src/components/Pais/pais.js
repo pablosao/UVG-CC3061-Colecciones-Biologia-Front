@@ -69,6 +69,7 @@ export default reduxForm({
 })(
   connect(
     (state) => ({
+      resultados: selectors.
       //isLoading: selectors.getIsAuthenticating(state),
       //error: selectors.getAuthenticatingError(state),
       //isAuthenticated: selectors.isAuthenticated(state),

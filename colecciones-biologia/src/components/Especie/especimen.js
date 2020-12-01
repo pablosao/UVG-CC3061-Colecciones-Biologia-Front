@@ -11,11 +11,13 @@ import * as selectors from "../../reducers";
 
 
 //datos generales
-const step1Content = 
+const step1Content = (countries, departments, municipios) => {
+  console.log(countries,'jeje')
+  return(
 <div>
   <h3>Datos Generales</h3>
   <div class="animation-container">
-              <form action="" name="form-step-1">
+              <form action="" name="form-step-1" onSubmit={(values)=> console.log('wenas', values)}>
                 <div class="fieldgroup">
                   <input type="text" name="codigo" id="codigo" />
                   <label for="codigo">Código</label>
@@ -37,11 +39,9 @@ const step1Content =
                       País
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      {/*countries.map((data, idx) => (
-                      <a class="dropdown-item" href="#">{data.description}</a>
-                      ))*/}
-                
-
+                      {countries ? (countries.map((data, idx) => (
+                        <p class="dropdown-item" type='text' aria-valuetext={data.id}>{data.description}</p>
+                      ))) : null}
                     </div>
                   </div>
                 </div>
@@ -52,10 +52,9 @@ const step1Content =
                       Departamento
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Guatemala</a>
-                      <a class="dropdown-item" href="#">Zacapa</a>
-                      <a class="dropdown-item" href="#">Izabal</a>
-                      <a class="dropdown-item" href="#">Huehuetenango</a>
+                    {departments ? (departments.map((data, idx) => (
+                        <a class="dropdown-item" href="#">{data.description}</a>
+                    ))) : null}
 
                     </div>
                   </div>
@@ -67,9 +66,10 @@ const step1Content =
                       Municipio
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Guatemala</a>
-                      <a class="dropdown-item" href="#">Chinautla</a>
-                      <a class="dropdown-item" href="#">Palencia</a>
+                    {municipios ? (municipios.map((data, idx) => (
+                        <a class="dropdown-item" href="#">{data.description}</a>
+                    ))) : null}
+
                     </div>
                   </div>
                 </div>
@@ -99,7 +99,6 @@ const step1Content =
                   <label for="incertidumbre">Incertidumbre</label>
                 </div>
 
-
                 <div class="fieldgroup">
                   <input type="text" name="collector_name" id="collector_name" />
                   <label for="collector_name">Nombre del Colector</label>
@@ -112,9 +111,13 @@ const step1Content =
                 <div class="fieldgroup">
                   <input type="date" name="collect_date" id="collect_date" />
                 </div>
-        </form>
-  </div>
-  </div>
+
+              <button className= "buttons" type='submit' >enviar</button>
+
+          </form>
+        </div>
+      </div>)}
+
 const step2Content = <div>
 <h3>Datos Generales</h3>
 <div class="animation-container">
@@ -172,7 +175,10 @@ const step3Content = <div>
       </form>
 </div>
 </div>;
-const step4Content = <div>
+const step4Content = (lifeStage, conservation, baseRegistro) => {
+  //console.log(countries,'jeje')
+  return(
+  <div>
 <h3>Datos de Curacion</h3>
 <div class="animation-container">
             <form action="" name="form-step-1">
@@ -189,9 +195,9 @@ const step4Content = <div>
                     Etapa de vida
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" >Action</a>
-                    <a class="dropdown-item" >Another action</a>
-                    <a class="dropdown-item" >Something else here</a>
+                  {lifeStage ? (lifeStage.map((data, idx) => (
+                        <a class="dropdown-item" href="#">{data.description}</a>
+                  ))) : null}
                   </div>
                 </div>
               </div>
@@ -202,9 +208,8 @@ const step4Content = <div>
                     Sexo
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" >Action</a>
-                    <a class="dropdown-item" >Another action</a>
-                    <a class="dropdown-item" >Something else here</a>
+                    <a class="dropdown-item" >F</a>
+                    <a class="dropdown-item" >M</a>
                   </div>
                 </div>
               </div>
@@ -215,9 +220,9 @@ const step4Content = <div>
                     Preparacion
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" >Action</a>
-                    <a class="dropdown-item" >Another action</a>
-                    <a class="dropdown-item" >Something else here</a>
+                  {conservation ? (conservation.map((data, idx) => (
+                        <a class="dropdown-item" href="#">{data.description}</a>
+                  ))) : null}
                   </div>
                 </div>
               </div>
@@ -228,22 +233,24 @@ const step4Content = <div>
                     Base de Registro
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" >Action</a>
-                    <a class="dropdown-item" >Another action</a>
-                    <a class="dropdown-item" >Something else here</a>
+                  {baseRegistro ? (baseRegistro.map((data, idx) => (
+                        <a class="dropdown-item" href="#">{data.description}</a>
+                  ))) : null}
                   </div>
                 </div>
               </div>
 
       </form>
 </div>
-</div>;
+</div>)};
 
 
-const onFormSubmit = () =>{
-  console.log('hola')
+
+function step2Validator(values) {
+  console.log(values)
+
+  // return a boolean
 }
-
 
 const NewEspecie = ({
   countries, 
@@ -252,34 +259,54 @@ const NewEspecie = ({
   lifeStage,
   conservation,
   baseRegistro,
+
+  
 }) => {
-  console.log(countries)
+  console.log('paises aqui', countries)
+  const onFormSubmit = (values) =>{
+    console.log('hola', values)
+  }
+  if (countries && departments && municipios && lifeStage && conservation && baseRegistro ){
+    return (
+      <div className="especimen-container">
+        <section class="section">
+        <h1>Formulario de Ingreso Nuevo Especimen</h1>
+        <StepProgressBar
+          startingStep={0}
+          onSubmit={onFormSubmit}
+          submitBtnName="sub"
+          previousBtnName="prev"
+          nextBtnName="next"
+          steps={[
+            {
+              content: step1Content(countries, departments, municipios),
+              //validator: step2Validator,
+            },
+            {
+              content: step2Content,
+            },
+            {
+              content: step3Content,
+            },
+            {
+              content: step4Content(lifeStage, conservation, baseRegistro,),
+            }
+          ]}
+          
+        /> 
+  </section>
+  </div>
+    );
+  }
   return (
-    <div className="especimen-container">
-      <section class="section">
-      <h1>Formulario de Ingreso Nuevo Especimen</h1>
-      <StepProgressBar
-        startingStep={0}
-        onSubmit={onFormSubmit}
-        steps={[
-          {
-            content: step1Content,
-          },
-          {
-            content: step2Content,
-          },
-          {
-            content: step3Content,
-          },
-          {
-            content: step4Content,
-          }
-        ]}
-        
-      />      
-</section>
-</div>
-  );
+    <div className="col-sm-10">
+      <br></br>
+      <h3>Cargando...</h3>
+      <div class="spinner-border text-success" role="status">
+     <span class="sr-only">Loading...</span>
+    <br></br>
+  </div></div>
+  )
 };
 
 export default connect((state) => ({
