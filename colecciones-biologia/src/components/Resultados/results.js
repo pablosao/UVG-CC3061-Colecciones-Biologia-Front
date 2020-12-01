@@ -6,11 +6,17 @@ import * as actions from "../../actions/selectedSpecies";
 
 import "./styles.css";
 
-const Results = ({ searching, isAuthenticated, onClick, selectedSpecies }) => {
+const Results = ({
+  searching,
+  searchResults,
+  isAuthenticated,
+  onClick,
+  selectedSpecies,
+}) => {
   if (selectedSpecies) {
     return <Redirect to={`/view-species/${selectedSpecies.id}`} />;
   }
-  if (searching) {
+  if (searchResults && selectors.getSearchingWord) {
     return (
       <div>
         <div className="row">
@@ -29,7 +35,7 @@ const Results = ({ searching, isAuthenticated, onClick, selectedSpecies }) => {
                 </tr>
               </thead>
               <tbody>
-                {searching.map((data, idx) => (
+                {searchResults.map((data, idx) => (
                   <tr key={idx} onClick={() => onClick(data)}>
                     <th scope="row">{data.scientific_name}</th>
                     <td>{data.common_name}</td>
@@ -45,12 +51,13 @@ const Results = ({ searching, isAuthenticated, onClick, selectedSpecies }) => {
       </div>
     );
   }
-  return <div>Hola</div>;
+  return <Redirect to="" />;
 };
 
 export default connect(
   (state) => ({
-    searching: selectors.getSearchResults(state),
+    searching: selectors.getSearchingWord(state),
+    searchResults: selectors.getSearchResults(state),
     isAuthenticated: selectors.isAuthenticated(state),
     selectedSpecies: selectors.getSelectedSpecies(state),
   }),

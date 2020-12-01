@@ -6,8 +6,8 @@ import * as selectors from "../../reducers";
 
 import "./style.css";
 
-const Search = ({ searching }) => {
-  if (searching) {
+const Search = ({ searching, searchingResults }) => {
+  if (searching && searchingResults) {
     return <Redirect to="/resultados" />;
   }
   return (
@@ -27,4 +27,5 @@ const Search = ({ searching }) => {
 
 export default connect((state) => ({
   searching: selectors.getSearchingWord(state),
+  searchingResults: selectors.getSearchResults(state),
 }))(Search);
