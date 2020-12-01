@@ -36,14 +36,16 @@ const NavBar = ({ clicked, onClick, isAuthenticated }) => {
       </div>
       <ul className={clicked ? "nav-menu active" : "nav-menu"}>
         {MenuItems.map((item, index) => {
-          if (item.title != "Formulario" || isAuthenticated) {
-            return (
-              <li key={index}>
-                <a className={item.cName} href={item.url}>
-                  {item.title}
-                </a>
-              </li>
-            );
+          if (item.title != "Dashboard" || isAuthenticated) {
+            if (item.title != "Acerca de Nosotros" || !isAuthenticated) {
+              return (
+                <li key={index}>
+                  <a className={item.cName} href={item.url}>
+                    {item.title}
+                  </a>
+                </li>
+              );
+            }
           }
         })}
       </ul>

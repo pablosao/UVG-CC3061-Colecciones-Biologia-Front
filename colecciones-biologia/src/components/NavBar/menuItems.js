@@ -5,8 +5,8 @@ const MenuItems = [
     cName: "nav-links",
   },
   {
-    title: "Formulario",
-    url: "/formulario",
+    title: "Dashboard",
+    url: "/admin",
     cName: "nav-links",
   },
   {
