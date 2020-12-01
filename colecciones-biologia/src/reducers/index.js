@@ -26,7 +26,6 @@ export const getSearchSuggestions = (state) =>
 export const getSearchingWord = (state) =>
   searchSelectors.getSearching(state.search);
 export const getSearchResults = (state) =>
-  //console.log(searchSelectors.getSearchResults(state.search));
   searchSelectors.getSearchResults(state.search);
 
 // Auth Selectors
