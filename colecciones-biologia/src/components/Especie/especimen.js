@@ -25,6 +25,21 @@ const step1Content = <div>
                   <input type="text" name="sci_name" id="sci_name" />
                   <label for="sci_name">Nombre Científico</label>
                 </div>
+
+                <div class="buttons">
+                  <div class="dropdown">
+                    <button class="btn-form btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      País
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Guatemala</a>
+                      <a class="dropdown-item" href="#">México</a>
+                      <a class="dropdown-item" href="#">Belice</a>
+                      <a class="dropdown-item" href="#">Honduras</a>
+
+                    </div>
+                  </div>
+                </div>
                 
                 <div class="buttons">
                   <div class="dropdown">
@@ -111,65 +126,33 @@ const step2Content = <div>
                   </div>
                 </div>
               </div>
-                <div class="buttons">
-
-                <div class="dropdown">
-                  <button class="btn-form btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Filo
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" >Action</a>
-                    <a class="dropdown-item" >Another action</a>
-                    <a class="dropdown-item" >Something else here</a>
+              <div class="buttons">
+                  <div class="fieldgroup">
+                    <input type="text" name="filo" id="filo" />
+                    <label for="incertidumbre">Filo</label>
                   </div>
-                </div>
               </div>
 
               <div class="buttons">
-                <div class="dropdown">
-                  <button class="btn-form btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Clase
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" >Action</a>
-                    <a class="dropdown-item" >Another action</a>
-                    <a class="dropdown-item" >Something else here</a>
+                  <div class="fieldgroup">
+                    <input type="text" name="clase" id="clase" />
+                    <label for="incertidumbre">Clase</label>
                   </div>
-                </div>
               </div>
 
               <div class="buttons">
-                <div class="dropdown">
-                  <button class="btn-form btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Orden
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" >Action</a>
-                    <a class="dropdown-item" >Another action</a>
-                    <a class="dropdown-item" >Something else here</a>
+                  <div class="fieldgroup">
+                    <input type="text" name="orden" id="orden" />
+                    <label for="incertidumbre">Orden</label>
                   </div>
-                </div>
               </div>
 
               <div class="buttons">
-                <div class="dropdown">
-                  <button class="btn-form btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Familia
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" >Action</a>
-                    <a class="dropdown-item" >Another action</a>
-                    <a class="dropdown-item" >Something else here</a>
+                  <div class="fieldgroup">
+                    <input type="text" name="familia" id="familia" />
+                    <label for="incertidumbre">Familia</label>
                   </div>
-                </div>
-              </div>
-              <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
-
-
-              
+              </div>    
       </form>
 </div>
 </div>;
@@ -177,10 +160,6 @@ const step3Content = <div>
 <h3>Datos Miscelaneos</h3>
 <div class="animation-container">
             <form action="" name="form-step-1">
-              <div class="fieldgroup">
-                <input type="file" name="codigo" id="codigo" />
-                <label for="codigo">Seleccione Imagenes</label>
-              </div>
               <h6>Comentarios del Colector</h6>
               <div class="fieldgroup">
                 <textarea type="text" name="collector_coments" id="collector_coments" />
@@ -192,18 +171,7 @@ const step4Content = <div>
 <h3>Datos de Curacion</h3>
 <div class="animation-container">
             <form action="" name="form-step-1">
-            <div class="buttons">
-                <div class="dropdown">
-                  <button class="btn-form btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Habitat
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" >Action</a>
-                    <a class="dropdown-item" >Another action</a>
-                    <a class="dropdown-item" >Something else here</a>
-                  </div>
-                </div>
-              </div>
+           
               <br></br>
               <h6>Comentarios </h6>
               <div class="fieldgroup">
@@ -289,15 +257,12 @@ const NewEspecie = () => {
           },
           {
             content: step2Content,
-            /*validator: step2Validator*/
           },
           {
             content: step3Content,
-            /*validator: step3Validator*/
           },
           {
             content: step4Content,
-            /*validator: step3Validator*/
           }
         ]}
         
