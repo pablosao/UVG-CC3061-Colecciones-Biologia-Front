@@ -7,6 +7,8 @@ const searching = (state = null, action) => {
   switch (action.type) {
     case types.SEARCH_RESULTS:
       return action.payload.search;
+    case types.SEARCH_RESULTS_FOUNDED:
+      return null;
     default:
       return state;
   }

@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Field, reduxForm } from "redux-form";
+import { Redirect } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
@@ -65,6 +66,8 @@ const renderInput = ({ input, meta, suggestions, onClick }) => {
 };
 
 const SearchField = ({
+  searching,
+  searchingResults,
   onTextChange,
   suggestions,
   handleSubmit,
@@ -72,6 +75,9 @@ const SearchField = ({
   onSubmit,
   onClick,
 }) => {
+  if (searching && searchingResults) {
+    return <Redirect to="/resultados" />;
+  }
   return (
     <div className="search-form">
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -109,6 +115,8 @@ export default reduxForm({
   connect(
     (state) => ({
       suggestions: selectors.getSearchSuggestions(state),
+      searching: selectors.getSearchingWord(state),
+      searchingResults: selectors.getSearchResults(state),
     }),
     (dispatch) => ({
       onTextChange(text) {

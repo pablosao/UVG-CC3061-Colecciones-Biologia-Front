@@ -6,6 +6,8 @@ const speciesSelected = (state = null, action) => {
   switch (action.type) {
     case types.SPECIES_SELECTED:
       return action.payload;
+    case "SEARCH_RESULTS":
+      return null;
     default:
       return state;
   }

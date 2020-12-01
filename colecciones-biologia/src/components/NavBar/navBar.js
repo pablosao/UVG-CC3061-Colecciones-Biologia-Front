@@ -16,6 +16,7 @@ import Button from "./button";
 
 const NavBar = ({ clicked, onClick, isAuthenticated }) => {
   const location = window.location.pathname.split("/");
+  console.log(location);
   return (
     <nav className="NavBarItems">
       <div className="navbar-logo">

@@ -6,10 +6,7 @@ import * as selectors from "../../reducers";
 
 import "./style.css";
 
-const Search = ({ searching, searchingResults }) => {
-  if (searching && searchingResults) {
-    return <Redirect to="/resultados" />;
-  }
+const Search = () => {
   return (
     <div className="search-container">
       <div className="search-img" />
@@ -25,7 +22,4 @@ const Search = ({ searching, searchingResults }) => {
   );
 };
 
-export default connect((state) => ({
-  searching: selectors.getSearchingWord(state),
-  searchingResults: selectors.getSearchResults(state),
-}))(Search);
+export default Search;
