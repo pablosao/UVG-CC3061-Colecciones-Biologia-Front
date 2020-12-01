@@ -1,9 +1,15 @@
 import React from "react";
+import { Redirect } from "react-router-dom";
+import { connect } from "react-redux";
 import SearchField from "./SearchField/searchfield";
+import * as selectors from "../../reducers";
 
 import "./style.css";
 
-const Search = () => {
+const Search = ({ searching }) => {
+  if (searching) {
+    return <Redirect to="/test" />;
+  }
   return (
     <div className="search-container">
       <div className="search-img" />
@@ -14,13 +20,11 @@ const Search = () => {
         <div className="search-field">
           <SearchField />
         </div>
-        {/* <img
-            src="https://www.picsporadic.com/wp-content/uploads/2019/03/guatemala-atitlan-150315-016-hdr-gx1_web.jpg"
-            alt=""
-          /> */}
       </div>
     </div>
   );
 };
 
-export default Search;
+export default connect((state) => ({
+  searching: selectors.getSearchingWord(state),
+}))(Search);

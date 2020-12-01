@@ -37,7 +37,7 @@ const exampleSearchList = [
   "Chaetura pelagica",
 ];
 
-const renderInput = ({ input, meta, suggestions }) => {
+const renderInput = ({ input, meta, suggestions, onClick }) => {
   return (
     <div>
       <div className="search-input">
@@ -47,7 +47,13 @@ const renderInput = ({ input, meta, suggestions }) => {
         <div className="search-suggestions">
           <ul>
             {suggestions.map((suggestion, index) => (
-              <li className="suggestion" key={index}>
+              <li
+                className="suggestion"
+                key={index}
+                onClick={() => {
+                  onClick(suggestion.common_name);
+                }}
+              >
                 {suggestion.common_name}
               </li>
             ))}
@@ -64,6 +70,7 @@ const SearchField = ({
   handleSubmit,
   submitting,
   onSubmit,
+  onClick,
 }) => {
   return (
     <div className="search-form">
@@ -73,6 +80,7 @@ const SearchField = ({
           placeholder="Buscar..."
           onChange={onTextChange}
           suggestions={suggestions}
+          onClick={onClick}
           component={renderInput}
         />
         <button className="search-btn" type="submit" disabled={submitting}>
@@ -110,7 +118,13 @@ export default reduxForm({
         }
       },
       onSubmit(values) {
-        console.log(values.search);
+        const { search } = values;
+        if (search && search.length > 0) {
+          dispatch(actions.searchResults(search));
+        }
+      },
+      onClick(search) {
+        dispatch(actions.searchResults(search));
       },
     })
   )(SearchField)

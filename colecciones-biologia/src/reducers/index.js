@@ -21,6 +21,10 @@ export const getMenuClick = (state) =>
 //Search Selectors
 export const getSearchSuggestions = (state) =>
   searchSelectors.getSuggestions(state.search);
+export const getSearchingWord = (state) =>
+  searchSelectors.getSearching(state.search);
+export const getSearchResults = (state) =>
+  searchSelectors.getSearchResults(state.search);
 
 // Auth Selectors
 export const getAuthToken = (state) => authSelectors.getAuthToken(state.auth);

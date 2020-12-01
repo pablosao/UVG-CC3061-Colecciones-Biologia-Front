@@ -5,12 +5,11 @@ import * as selectors from "../reducers";
 import * as searchActions from "../actions/search";
 import * as types from "../types/search";
 
-function* search(action) {
-  console.log("llega", action);
+function* searchSuggestions(action) {
   try {
     const response = yield call(
       fetch,
-      `${API_BASE_URL}/api/organisms/search_results/`,
+      `${API_BASE_URL}/api/organisms/search_suggestions_results/`,
       {
         method: "POST",
         body: JSON.stringify(action.payload),
@@ -31,6 +30,34 @@ function* search(action) {
   }
 }
 
+export function* watchSearchSuggestion() {
+  yield takeEvery(types.SUGGESTIONS_SEARCHING, searchSuggestions);
+}
+
+function* search(action) {
+  try {
+    const response = yield call(
+      fetch,
+      `${API_BASE_URL}/api/organisms/search_results/`,
+      {
+        method: "POST",
+        body: JSON.stringify(action.payload),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    if (response.status === 200) {
+      const results = yield response.json();
+      yield put(searchActions.resultsFounded({ results }));
+    } else {
+      yield put(searchActions.resultsFounded({ results: [] }));
+    }
+  } catch (error) {
+    yield put(searchActions.resultsFounded({ results: [] }));
+  }
+}
+
 export function* watchSearch() {
-  yield takeEvery(types.SUGGESTIONS_SEARCHING, search);
+  yield takeEvery(types.SEARCH_RESULTS, search);
 }
