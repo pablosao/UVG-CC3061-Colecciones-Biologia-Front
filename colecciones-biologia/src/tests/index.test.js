@@ -10,7 +10,15 @@ describe('index reducers', () => {
                 navbar: {
                 hamburgerMenuClicked: false},
                 search: { 
-                suggestions: []}
+                suggestions: [],
+                searchResults:[],
+                searching: null,
+                searchingSuggestions: null}
+                
+                
+                
+                
+
                 }
 
 
