@@ -92,11 +92,11 @@ const VistaEspecie = ({ selectedSpecies }) => {
               <br></br>
               <h1>Taxonomia:</h1>
               <hr></hr>
-              <p>Reino:</p>
-              <p>Filo:</p>
-              <p>Clase:</p>
-              <p>Familia:</p>
-              <p>Nombre Comun:</p>
+              <p>{"Reino: " + selectedSpecies.kingdom}</p>
+              <p>{"Filo: " + selectedSpecies.phile}</p>
+              <p>{"Clase: " + selectedSpecies.clase}</p>
+              <p>{"Familia: " + selectedSpecies.family}</p>
+              <p>{"Nombre Comun: " + selectedSpecies.common_name}</p>
             </div>
           </div>
           <div class="col col-md-12 col-sm-12">
